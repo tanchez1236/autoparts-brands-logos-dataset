@@ -1,44 +1,46 @@
 # Autoparts Brands Logos Dataset
 
-Dataset abierto de logos de **marcas de autopartes**, generado mediante
-scraping automatizado y validacion de imagenes.
+An open dataset of auto parts brand logos, generated through automated scraping,
+image cleaning, and validation.
 
-Cada logo queda disponible en tres variantes listas para usar — igual que
-[filippofilip95/car-logos-dataset](https://github.com/filippofilip95/car-logos-dataset)
-pero enfocado en fabricantes de piezas aftermarket.
+Each brand logo is published in three ready-to-use variants:
 
-## Uso rapido
+- `thumb` (max 100 px)
+- `optimized` (max 240 px)
+- `original` (full available resolution)
 
-Cada marca tiene una entrada en `data/logos.json`:
+## Quick Usage
+
+Each brand is represented as one entry in `data/logos.json`:
 
 ```json
 {
   "name": "Bosch",
   "slug": "bosch",
   "image": {
-    "thumb":     "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/bosch.png",
+    "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/bosch.png",
     "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/bosch.png",
-    "original":  "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/bosch.png"
+    "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/bosch.png"
   }
 }
 ```
 
-## Estructura del repositorio
+## Repository Structure
 
 ```text
 autoparts-brands-logos-dataset/
-├── brands-list.txt          # lista curada de marcas
+├── brands-list.txt
 ├── requirements.txt
 ├── data/
-│   └── logos.json           # dataset principal (generado)
+│   └── logos.json
 ├── logos/
-│   ├── original/            # PNG a resolucion original
-│   ├── optimized/           # PNG max 240 px
-│   └── thumb/               # PNG max 100 px
-├── dataset/                 # logos crudos descargados por los scrapers
+│   ├── original/
+│   ├── optimized/
+│   └── thumb/
+├── dataset/
 │   └── <slug>/
-│       ├── logo.png         # logo canónico (scrapers de sitios)
-│       ├── 001.png …        # logos de motores de búsqueda
+│       ├── logo.png
+│       ├── 001.png ...
 │       └── metadata.json
 ├── scrapers/
 │   ├── autodoc_scraper.py
@@ -52,31 +54,33 @@ autoparts-brands-logos-dataset/
 │       ├── downloader.py
 │       └── validators.py
 └── tools/
-    ├── process_logos.py     # genera logos/original|optimized|thumb
-    ├── generate_data.py     # genera data/logos.json
+    ├── process_logos.py
+    ├── generate_data.py
     ├── count.py
     ├── dedupe.py
     └── verify.py
 ```
 
-## Advertencia
+## Legal Notice
 
-Los logos pertenecen a sus respectivos dueños. Este dataset es solo para investigacion, machine learning y propositos educativos. Antes de reutilizar imagenes en productos o publicaciones, revisa licencias, terminos de uso y politicas de marca de cada fabricante.
+All logos are trademarks of their respective owners.
 
-## Alcance del dataset
+This dataset is provided for research, educational, and machine-learning
+purposes. Before using logos in products, marketing, or publications, review the
+applicable license terms, trademark policies, and source website terms.
 
-Enfocado en marcas de **partes automotrices y aftermarket**. La lista incluye fabricantes globales de:
+## Dataset Scope
 
-- Frenos, suspension y direccion
-- Filtros, lubricacion y sellos
-- Encendido, inyeccion y electronica automotriz
-- Iluminacion, climatizacion y enfriamiento
-- Rodamientos, transmisiones y componentes de motor
-- Neumaticos, baterias y accesorios tecnicos
+Focused on automotive aftermarket and parts brands, including categories such as:
 
----
+- Braking, suspension, and steering
+- Filters, lubrication, and seals
+- Ignition, injection, and automotive electronics
+- Lighting, HVAC, and cooling
+- Bearings, transmissions, and engine components
+- Batteries, tires, and technical accessories
 
-## Instalacion
+## Installation
 
 ```bash
 python -m venv .venv
@@ -84,15 +88,11 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
----
+## Full Pipeline
 
-## Pipeline completo
+### 1. Scrape logos from auto parts websites
 
-### Paso 1 — Scrapear logos desde sitios de autopartes
-
-Los scrapers de sitios descargan el logo oficial de cada marca directamente
-desde las paginas de fabricantes de autodoc.es, rockauto.com y eurocarparts.com.
-Los logos se guardan en `dataset/<slug>/logo.png`.
+Site scrapers download canonical logos directly into `dataset/<slug>/logo.png`.
 
 ```bash
 # autodoc.es
@@ -105,29 +105,25 @@ python scrapers/rockauto_scraper.py --dataset-dir dataset
 python scrapers/eurocarparts_scraper.py --dataset-dir dataset
 ```
 
-### Paso 2 (opcional) — Enriquecer con motores de busqueda
+### 2. (Optional) Enrich with search engines
 
-Si una marca no aparece en los catálogos anteriores puedes buscar logos
-adicionales via API de Google o Bing.
-
-**Google Custom Search**
+If a brand is missing from catalog sources, you can fetch additional logos from
+Google or Bing image APIs.
 
 ```bash
-export GOOGLE_CUSTOM_SEARCH_API_KEY="tu_api_key"
-export GOOGLE_CUSTOM_SEARCH_CX="tu_cx"
+# Google Custom Search
+export GOOGLE_CUSTOM_SEARCH_API_KEY="your_api_key"
+export GOOGLE_CUSTOM_SEARCH_CX="your_cx"
 python scrapers/google_images_scraper.py \
   --brands-file brands-list.txt --dataset-dir dataset --per-brand 5
-```
 
-**Bing Image Search**
-
-```bash
-export BING_IMAGE_SEARCH_API_KEY="tu_api_key"
+# Bing Image Search
+export BING_IMAGE_SEARCH_API_KEY="your_api_key"
 python scrapers/bing_scraper.py \
   --brands-file brands-list.txt --dataset-dir dataset --per-brand 5
 ```
 
-**DOM logo scraper** (sitio oficial especifico)
+For a specific official domain:
 
 ```bash
 python scrapers/dom_logo_scraper.py \
@@ -136,50 +132,28 @@ python scrapers/dom_logo_scraper.py \
   --dataset-dir dataset
 ```
 
-### Paso 3 — Generar variantes de logos
-
-Convierte cada logo crudo en las tres variantes publicables:
-
-| Variante    | Tamaño maximo | Ruta de salida              |
-|-------------|---------------|-----------------------------|
-| `original`  | sin cambio    | `logos/original/<slug>.png` |
-| `optimized` | 240 × 240 px  | `logos/optimized/<slug>.png`|
-| `thumb`     | 100 × 100 px  | `logos/thumb/<slug>.png`    |
+### 3. Build publishable logo variants
 
 ```bash
 python tools/process_logos.py
-# Procesar una sola marca:
+
+# Single brand
 python tools/process_logos.py --slug bosch
-# Sobreescribir existentes:
+
+# Overwrite existing outputs
 python tools/process_logos.py --force
 ```
 
-### Paso 4 — Generar data/logos.json
+### 4. Generate `data/logos.json`
 
 ```bash
 python tools/generate_data.py \
   --repo-url https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master
 ```
 
-El archivo resultante `data/logos.json` contiene un array de objetos:
+## Brand Metadata Format
 
-```json
-[
-  {
-    "name": "Bosch",
-    "slug": "bosch",
-    "image": {
-      "thumb":     "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/bosch.png",
-      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/bosch.png",
-      "original":  "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/bosch.png"
-    }
-  }
-]
-```
-
----
-
-## Formato de metadata por marca
+`dataset/<slug>/metadata.json` typically follows:
 
 ```json
 {
@@ -190,34 +164,45 @@ El archivo resultante `data/logos.json` contiene un array de objetos:
 }
 ```
 
----
-
-## Scripts auxiliares
+## Utility Scripts
 
 ```bash
-# Contar imagenes por marca
+# Count images by brand and sync metadata counters
 python tools/count.py --dataset-dir dataset --sync-metadata
 
-# Verificar que cada marca tenga al menos una imagen valida
+# Verify each brand has at least one valid image
 python tools/verify.py --brands-file brands-list.txt --dataset-dir dataset
 
-# Eliminar duplicados con perceptual hashing
+# Remove near-duplicates using perceptual hashing
 python tools/dedupe.py --dataset-dir dataset --threshold 4
 ```
 
-## Convenciones del dataset
+## Dataset Conventions
 
-- Carpeta por marca con slug en minusculas (`bosch`, `mann-filter`, …)
-- `logo.png` = logo canonico descargado por los scrapers de sitios
-- `site.png` = logo extraido por `dom_logo_scraper`
-- `001.png`, `002.png`, … = logos descargados via motores de busqueda
-- Solo se conservan archivos validos y no corruptos
+- One folder per brand slug (`bosch`, `mann-filter`, etc.)
+- `logo.png` is the canonical logo from site scrapers
+- `site.png` is extracted by `dom_logo_scraper`
+- `001.png`, `002.png`, etc. are search-engine results
+- Invalid/corrupt files should not be kept
 
-## Como contribuir
+## Contributing
 
-1. Agrega marcas nuevas en `brands-list.txt` (una por linea).
-2. Ejecuta los scrapers de sitios y/o de motores de busqueda.
-3. Corre `tools/process_logos.py` y `tools/generate_data.py`.
-4. Corre `tools/verify.py` y `tools/dedupe.py` antes de abrir un PR.
-5. Mantén el repositorio centrado en fabricantes de partes automotrices.
-- Integracion con CI para validar que no se agreguen imagenes corruptas
+Contributions are welcome.
+
+Please use a fork + feature branch + pull request workflow so changes can be
+reviewed and integrated cleanly.
+
+1. Fork this repository.
+2. Create a branch from `main` in your fork (for example: `feat/add-new-brands`).
+3. Make your changes and run the full data pipeline when relevant.
+4. Run validation tools before opening a PR:
+
+```bash
+python tools/verify.py --brands-file brands-list.txt --dataset-dir dataset
+python tools/dedupe.py --dataset-dir dataset --threshold 4
+```
+
+5. Open a Pull Request with a clear summary of what changed.
+
+If your PR is approved, it can be merged and incorporated into future dataset
+updates.

@@ -1,0 +1,9 @@
+{
+  "brand": "osram",
+  "name": "OSRAM",
+  "count": 1,
+  "sources": [
+    "autodoc",
+    "eurocarparts"
+  ]
+}

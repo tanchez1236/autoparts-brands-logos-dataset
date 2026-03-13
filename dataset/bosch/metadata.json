@@ -1,0 +1,9 @@
+{
+  "brand": "bosch",
+  "name": "BOSCH",
+  "count": 1,
+  "sources": [
+    "autodoc",
+    "eurocarparts"
+  ]
+}

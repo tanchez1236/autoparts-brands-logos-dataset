@@ -1,0 +1,9 @@
+{
+  "brand": "fte",
+  "name": "FTE",
+  "count": 1,
+  "sources": [
+    "autodoc",
+    "eurocarparts"
+  ]
+}

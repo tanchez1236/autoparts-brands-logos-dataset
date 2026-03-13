@@ -1,0 +1,9 @@
+{
+  "brand": "valeo",
+  "name": "VALEO",
+  "count": 1,
+  "sources": [
+    "autodoc",
+    "eurocarparts"
+  ]
+}

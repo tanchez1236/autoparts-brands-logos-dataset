@@ -1,0 +1,9 @@
+{
+  "brand": "example-brand",
+  "count": 2,
+  "sources": [
+    "google",
+    "bing",
+    "dom"
+  ]
+}

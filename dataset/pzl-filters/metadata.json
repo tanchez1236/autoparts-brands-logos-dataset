@@ -1,0 +1,8 @@
+{
+  "brand": "pzl-filters",
+  "name": "PZL Filters",
+  "count": 1,
+  "sources": [
+    "autodoc"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "brand": "vemo",
+  "name": "VEMO",
+  "count": 1,
+  "sources": [
+    "autodoc",
+    "eurocarparts"
+  ]
+}

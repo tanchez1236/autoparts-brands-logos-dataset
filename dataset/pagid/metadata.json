@@ -1,0 +1,9 @@
+{
+  "brand": "pagid",
+  "name": "PAGID",
+  "count": 1,
+  "sources": [
+    "autodoc",
+    "eurocarparts"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "brand": "lrt",
+  "name": "LRT",
+  "count": 1,
+  "sources": [
+    "autodoc"
+  ]
+}

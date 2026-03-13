@@ -1,0 +1,8 @@
+{
+  "brand": "poweredge",
+  "name": "PowerEdge",
+  "count": 1,
+  "sources": [
+    "autodoc"
+  ]
+}

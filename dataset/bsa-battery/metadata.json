@@ -1,0 +1,8 @@
+{
+  "brand": "bsa-battery",
+  "name": "BSA Battery",
+  "count": 1,
+  "sources": [
+    "autodoc"
+  ]
+}

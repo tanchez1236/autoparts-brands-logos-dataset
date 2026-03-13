@@ -1,0 +1,9 @@
+{
+  "brand": "ina",
+  "name": "INA",
+  "count": 1,
+  "sources": [
+    "autodoc",
+    "eurocarparts"
+  ]
+}

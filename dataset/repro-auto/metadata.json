@@ -1,0 +1,8 @@
+{
+  "brand": "repro-auto",
+  "name": "Repro-Auto",
+  "count": 1,
+  "sources": [
+    "autodoc"
+  ]
+}

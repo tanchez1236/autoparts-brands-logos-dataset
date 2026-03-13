@@ -11,11 +11,16 @@ except (ImportError, OSError):  # pragma: no cover
     cairosvg = None
 
 
+# Resolution used when rasterising SVG logos — keeps them crisp at original size
+_SVG_RASTER_WIDTH = 512
+
+
 def _load_image_from_bytes(raw_bytes: bytes, extension: str = "") -> Image.Image:
     if extension.lower() == ".svg":
         if cairosvg is None:
             raise RuntimeError("cairosvg es requerido para convertir SVG a PNG")
-        raw_bytes = cairosvg.svg2png(bytestring=raw_bytes)
+        # Rasterise at high resolution so the PNG source is always sharp
+        raw_bytes = cairosvg.svg2png(bytestring=raw_bytes, output_width=_SVG_RASTER_WIDTH)
     image = Image.open(BytesIO(raw_bytes))
     image.load()
     return image

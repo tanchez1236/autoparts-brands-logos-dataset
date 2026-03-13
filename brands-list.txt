@@ -276,3 +276,38 @@ Mannol
 Liqui Moly
 Motul
 Castrol Automotive
+Valvoline
+Pennzoil
+Total Energies
+Repsol
+Mobil
+Shell
+Lucas Oil
+Royal Purple
+Red Line
+Wynns
+STP
+Turtle Wax
+Meguiar's
+Permatex
+WD-40
+BG Products
+GT Radial
+Laufenn
+Kenda Tires
+Deestone
+Otani
+Trico
+Hino
+Isuzu
+Daihatsu
+SsangYong
+Foton
+Chery
+Great Wall Motors
+JAC Motors
+DieHard
+Deka Batteries
+Trojan Battery
+Hastings
+National

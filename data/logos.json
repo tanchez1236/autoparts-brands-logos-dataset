@@ -1503,6 +1503,15 @@
     }
   },
   {
+    "name": "Chery",
+    "slug": "chery",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/chery.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/chery.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/chery.png"
+    }
+  },
+  {
     "name": "CIFAM",
     "slug": "cifam",
     "image": {
@@ -1782,6 +1791,15 @@
     }
   },
   {
+    "name": "Deka Batteries",
+    "slug": "deka-batteries",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/deka-batteries.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/deka-batteries.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/deka-batteries.png"
+    }
+  },
+  {
     "name": "DELCO REMY",
     "slug": "delco-remy",
     "image": {
@@ -1851,6 +1869,15 @@
       "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/diederichs.png",
       "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/diederichs.png",
       "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/diederichs.png"
+    }
+  },
+  {
+    "name": "DieHard",
+    "slug": "diehard",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/diehard.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/diehard.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/diehard.png"
     }
   },
   {
@@ -3015,6 +3042,15 @@
     }
   },
   {
+    "name": "Great Wall Motors",
+    "slug": "great-wall-motors",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/great-wall-motors.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/great-wall-motors.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/great-wall-motors.png"
+    }
+  },
+  {
     "name": "GREEN",
     "slug": "green",
     "image": {
@@ -3039,6 +3075,15 @@
       "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/gt-bergmann.png",
       "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/gt-bergmann.png",
       "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/gt-bergmann.png"
+    }
+  },
+  {
+    "name": "GT Radial",
+    "slug": "gt-radial",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/gt-radial.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/gt-radial.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/gt-radial.png"
     }
   },
   {
@@ -3228,6 +3273,15 @@
       "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/high-car.png",
       "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/high-car.png",
       "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/high-car.png"
+    }
+  },
+  {
+    "name": "Hino",
+    "slug": "hino",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/hino.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/hino.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/hino.png"
     }
   },
   {
@@ -3492,6 +3546,15 @@
     }
   },
   {
+    "name": "Isuzu",
+    "slug": "isuzu",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/isuzu.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/isuzu.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/isuzu.png"
+    }
+  },
+  {
     "name": "IVECO",
     "slug": "iveco",
     "image": {
@@ -3525,6 +3588,15 @@
       "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/izi.png",
       "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/izi.png",
       "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/izi.png"
+    }
+  },
+  {
+    "name": "JAC Motors",
+    "slug": "jac-motors",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/jac-motors.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/jac-motors.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/jac-motors.png"
     }
   },
   {
@@ -4239,6 +4311,15 @@
     }
   },
   {
+    "name": "Lucas Oil",
+    "slug": "lucas-oil",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/lucas-oil.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/lucas-oil.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/lucas-oil.png"
+    }
+  },
+  {
     "name": "LuK",
     "slug": "luk",
     "image": {
@@ -4425,6 +4506,15 @@
       "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/mecarm.png",
       "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/mecarm.png",
       "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/mecarm.png"
+    }
+  },
+  {
+    "name": "Meguiar's",
+    "slug": "meguiar-s",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/meguiar-s.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/meguiar-s.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/meguiar-s.png"
     }
   },
   {
@@ -5301,6 +5391,15 @@
     }
   },
   {
+    "name": "Permatex",
+    "slug": "permatex",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/permatex.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/permatex.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/permatex.png"
+    }
+  },
+  {
     "name": "PETERS ENNEPETAL",
     "slug": "peters-ennepetal",
     "image": {
@@ -5922,6 +6021,15 @@
     }
   },
   {
+    "name": "Repsol",
+    "slug": "repsol",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/repsol.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/repsol.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/repsol.png"
+    }
+  },
+  {
     "name": "RESTAGRAF",
     "slug": "restagraf",
     "image": {
@@ -6081,6 +6189,15 @@
       "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/rotovis-automotive-electrics.png",
       "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/rotovis-automotive-electrics.png",
       "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/rotovis-automotive-electrics.png"
+    }
+  },
+  {
+    "name": "Royal Purple",
+    "slug": "royal-purple",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/royal-purple.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/royal-purple.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/royal-purple.png"
     }
   },
   {
@@ -7083,6 +7200,15 @@
     }
   },
   {
+    "name": "Total Energies",
+    "slug": "total-energies",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/total-energies.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/total-energies.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/total-energies.png"
+    }
+  },
+  {
     "name": "TOURMAX",
     "slug": "tourmax",
     "image": {
@@ -7305,6 +7431,15 @@
       "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/turbos-europe.png",
       "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/turbos-europe.png",
       "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/turbos-europe.png"
+    }
+  },
+  {
+    "name": "Turtle Wax",
+    "slug": "turtle-wax",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/turtle-wax.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/turtle-wax.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/turtle-wax.png"
     }
   },
   {

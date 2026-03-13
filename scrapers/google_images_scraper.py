@@ -40,6 +40,8 @@ def search_google_images(
             "num": batch_size,
             "start": start_index,
             "safe": "off",
+            # Prefer large images for a high-quality original source
+            "imgSize": "large",
         }
         response = session.get(GOOGLE_SEARCH_ENDPOINT, params=params, timeout=30)
         response.raise_for_status()

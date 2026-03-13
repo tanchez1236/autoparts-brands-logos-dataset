@@ -19,6 +19,7 @@ Usage
 from __future__ import annotations
 
 import argparse
+import math
 import sys
 from io import BytesIO
 from pathlib import Path
@@ -34,10 +35,13 @@ from downloader import read_metadata, slugify_brand_name
 
 # Output sizes: (max_width, max_height) — thumbnail() preserves aspect ratio
 VARIANTS: dict[str, tuple[int, int] | None] = {
-    "original": None,      # no resize — keep full resolution
-    "optimized": (240, 240),
+    "original": None,      # no resize — keep full resolution (upscaled if needed)
+    "optimized": (400, 400),
     "thumb": (100, 100),
 }
+
+# Originals smaller than this are upscaled so final assets are never blurry
+ORIGINAL_MIN_SIZE = (400, 400)
 
 
 # ---------------------------------------------------------------------------
@@ -104,6 +108,15 @@ def process_brand(brand_dir: Path, logos_dir: Path, slug: str, force: bool) -> b
     except Exception as exc:
         print(f"  [skip] {slug}: cannot open {source_path.name} — {exc}")
         return False
+
+    # Upscale the source image once so every variant benefits from a crisp base
+    w, h = original_img.size
+    min_w, min_h = ORIGINAL_MIN_SIZE
+    if w < min_w or h < min_h:
+        scale = max(min_w / w, min_h / h)
+        new_w = max(math.ceil(w * scale), 1)
+        new_h = max(math.ceil(h * scale), 1)
+        original_img = original_img.resize((new_w, new_h), Image.Resampling.LANCZOS)
 
     wrote_any = False
     for variant, max_size in VARIANTS.items():

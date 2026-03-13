@@ -1,0 +1,1576 @@
+Script started on Fri Mar 13 07:36:57 2026
+]633;P;ContinuationPrompt=%_> ]633;P;HasRichCommandDetection=True[1m[7m%[27m[1m[0m                                                                                ]633;D]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  nohup .venv/bin/python /tmp/ [Kffetch_missing_logos.py > /tmp/missing_logos.log 2>&1 & echo $![?2004l
+]633;E; nohup .venv/bin/python /tmp/fetch_missing_logos.py > /tmp/missing_logos.log 2>&1 & echo $!;]633;C[1] 2866
+2866
+[1m[7m%[27m[1m[0m                                                                                ]633;D;0]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  while ps -p 2866 > /dev/null [K  2>&1; do sleep 5; done; cat /tmp/missing_logos.log[?2004l
+]633;E; while ps -p 2866 > /dev/null 2>&1\x3b do sleep 5\x3b done\x3b cat /tmp/missing_logos.log;]633;C[1]  + done       nohup .venv/bin/python /tmp/fetch_missing_logos.py > /tmp/missing_logos.log 2
+[FAIL] Pennzoil                 : No se encontro un logo en el DOM con las heuristicas definidas.
+[OK]   Total Energies            -> site.png
+[FAIL] Repsol                   : cairosvg es requerido para convertir SVG a PNG
+[OK]   Lucas Oil                 -> site.png
+[FAIL] Royal Purple             : No se encontro un logo en el DOM con las heuristicas definidas.
+[OK]   Turtle Wax                -> site.png
+[FAIL] Meguiar's                : HTTPSConnectionPool(host='www.meguiars.com', port=443): Read timed out. (read timeout=20)
+[FAIL] Permatex                 : logo DOM invalido: tamano insuficiente: 121x60
+[FAIL] WD-40                    : cairosvg es requerido para convertir SVG a PNG
+[FAIL] GT Radial                : cairosvg es requerido para convertir SVG a PNG
+[FAIL] Laufenn                  : cairosvg es requerido para convertir SVG a PNG
+[FAIL] Kenda Tires              : No se encontro un logo en el DOM con las heuristicas definidas.
+[FAIL] Hino                     : HTTPSConnectionPool(host='hino-global.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='hino-global.com', port=443): Failed to resolve 'hino-global.com' ([Errno 8] nodename nor servname provided, or not known)"))
+[FAIL] Isuzu                    : HTTPSConnectionPool(host='isuzu.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+[FAIL] Daihatsu                 : HTTPSConnectionPool(host='daihatsu.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='daihatsu.com', port=443): Failed to resolve 'daihatsu.com' ([Errno 8] nodename nor servname provided, or not known)"))
+[FAIL] SsangYong                : HTTPSConnectionPool(host='www.hugedomains.com', port=443): Max retries exceeded with url: /domain_profile.cfm?d=ssangyongmotor.com (Caused by NewConnectionError("HTTPSConnection(host='www.hugedomains.com', port=443): Failed to establish a new connection: [Errno 61] Connection refused"))
+[FAIL] Foton                    : No se encontro un logo en el DOM con las heuristicas definidas.
+[FAIL] Chery                    : HTTPSConnectionPool(host='cheryinternational.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='cheryinternational.com', port=443): Failed to resolve 'cheryinternational.com' ([Errno 8] nodename nor servname provided, or not known)"))
+[FAIL] Great Wall Motors        : No connection adapters were found for "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20371%20130'%3E%3C/svg%3E"
+[OK]   JAC Motors                -> site.png
+[FAIL] DieHard                  : cairosvg es requerido para convertir SVG a PNG
+[FAIL] Hastings                 : HTTPSConnectionPool(host='hastingsfilters.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='hastingsfilters.com', port=443) at 0x2c7a7b390>, 'Connection to hastingsfilters.com timed out. (connect timeout=20)'))
+
+Done: 4 ok, 18 failed
+[1m[7m%[27m[1m[0m                                                                                ]633;D;0]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  .venv/bin/python -c "import  [Kccairosvg; print('cairosvg ok:', cairosvg.__version__)"[?2004l
+]633;E; .venv/bin/python -c "import cairosvg\x3b print('cairosvg ok:', cairosvg.__version__)";]633;CTraceback (most recent call last):
+  File [35m"<string>"[0m, line [35m1[0m, in [35m<module>[0m
+    [1;31mimport cairosvg[0m; print('cairosvg ok:', cairosvg.__version__)
+    [1;31m^^^^^^^^^^^^^^^[0m
+  File [35m"/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset/.venv/lib/python3.13/site-packages/cairosvg/__init__.py"[0m, line [35m25[0m, in [35m<module>[0m
+    [1;31mfrom . import surface[0m  # noqa isort:skip
+    [1;31m^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset/.venv/lib/python3.13/site-packages/cairosvg/surface.py"[0m, line [35m9[0m, in [35m<module>[0m
+    import cairocffi as cairo
+  File [35m"/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset/.venv/lib/python3.13/site-packages/cairocffi/__init__.py"[0m, line [35m60[0m, in [35m<module>[0m
+    cairo = dlopen(
+        ffi, ('cairo-2', 'cairo', 'libcairo-2'),
+        ('libcairo.so.2', 'libcairo.2.dylib', 'libcairo-2.dll'))
+  File [35m"/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset/.venv/lib/python3.13/site-packages/cairocffi/__init__.py"[0m, line [35m57[0m, in [35mdlopen[0m
+    [1;31mraise OSError(error_message)[0m  # pragma: no cover
+    [1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[1;35mOSError[0m: [35mno library called "cairo-2" was found
+no library called "cairo" was found
+no library called "libcairo-2" was found
+cannot load library 'libcairo.so.2': dlopen(libcairo.so.2, 0x0002): tried: 'libcairo.so.2' (no such file), '/System/Volumes/Preboot/Cryptexes/OSlibcairo.so.2' (no such file), '/usr/lib/libcairo.so.2' (no such file, not in dyld cache), 'libcairo.so.2' (no such file).  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libcairo.so.2'
+cannot load library 'libcairo.2.dylib': dlopen(libcairo.2.dylib, 0x0002): tried: 'libcairo.2.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OSlibcairo.2.dylib' (no such file), '/usr/lib/libcairo.2.dylib' (no such file, not in dyld cache), 'libcairo.2.dylib' (no such file).  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libcairo.2.dylib'
+cannot load library 'libcairo-2.dll': dlopen(libcairo-2.dll, 0x0002): tried: 'libcairo-2.dll' (no such file), '/System/Volumes/Preboot/Cryptexes/OSlibcairo-2.dll' (no such file), '/usr/lib/libcairo-2.dll' (no such file, not in dyld cache), 'libcairo-2.dll' (no such file).  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libcairo-2.dll'[0m
+[1m[7m%[27m[1m[0m                                                                                ]633;D;1]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  brew install cairo && .venv/ [Kbbin/python -c "import cairosvg; print('cairosvg ok:', cairosvg.__version__)"[?2004l
+]633;E; brew install cairo && .venv/bin/python -c "import cairosvg\x3b print('cairosvg ok:', cairosvg.__version__)";]633;C[?25l[34m⠋[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠋[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠋[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠋[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠙[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠙[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠙[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠙[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠚[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠚[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠚[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠚[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠞[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠞[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠞[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠞[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠖[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠖[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠖[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠖[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠦[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠦[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠦[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠦[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠴[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠴[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠴[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠴[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠲[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠲[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠲[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠲[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠳[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠳[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠳[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠳[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠓[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠓[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠓[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠓[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠋[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠋[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠋[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠋[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠙[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠙[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠙[0m JSON API formula.jws.json                          Downloading 254.0KB/-------
+[K[34m⠙[0m JSON API cask.jws.json                             Downloading 311.3KB/-------[K[1F[34m⠚[0m JSON API formula.jws.json                          Downloading 651.3KB/-------
+[K[34m⠚[0m JSON API cask.jws.json                             Downloading 647.2KB/-------[K[1F[34m⠚[0m JSON API formula.jws.json                          Downloading   1.1MB/-------
+[K[34m⠚[0m JSON API cask.jws.json                             Downloading   1.3MB/-------[K[1F[34m⠞[0m JSON API formula.jws.json                          Downloading   2.1MB/-------
+[K[34m⠞[0m JSON API cask.jws.json                             Downloading   2.2MB/-------[K[1F[34m⠞[0m JSON API formula.jws.json                          Downloading   4.1MB/-------
+[K[34m⠞[0m JSON API cask.jws.json                             Downloading   5.7MB/-------[K[1F[34m⠖[0m JSON API formula.jws.json                          Downloading   6.8MB/-------
+[K[34m⠖[0m JSON API cask.jws.json                             Downloading   9.6MB/-------[K[1F[34m⠖[0m JSON API formula.jws.json                          Downloading  10.0MB/-------
+[K[34m⠖[0m JSON API cask.jws.json                             Downloading  12.9MB/-------[K[1F[34m⠦[0m JSON API formula.jws.json                          Downloading  18.0MB/-------
+[K[34m⠦[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[34m⠴[0m JSON API formula.jws.json                          Downloading  31.9MB/-------
+[K[34m⠴[0m JSON API cask.jws.json                             Downloading  15.4MB/-------[K[1F[32m✔︎[0m JSON API cask.jws.json                             Downloaded   15.4MB/ 15.4MB
+[K[34m⠲[0m JSON API formula.jws.json                          Downloading  31.9MB/-------[K[0G[32m✔︎[0m JSON API formula.jws.json                          Downloaded   31.9MB/ 31.9MB
+[K[?25h[32m==>[0m [1mFetching downloads for: [32mcairo[39m[0m
+[?25l[34m⠋[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠋[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠙[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠙[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠚[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠚[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠞[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠞[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠖[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠖[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠦[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠦[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠴[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠴[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠲[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠲[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠳[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠳[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠓[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠓[0m Bottle Manifest cairo (1.18.4)[K[0G[34m⠋[0m Bottle Manifest cairo (1.18.4)                     Downloading  16.4KB/-------[K[0G[32m✔︎[0m Bottle Manifest cairo (1.18.4)                     Downloaded   29.8KB/ 29.8KB
+[K[?25h[?25l[32m✔︎[0m Bottle Manifest libpng (1.6.55)                    Downloaded    8.6KB/  8.6KB
+[K[32m✔︎[0m Bottle libpng (1.6.55)                             Downloaded  454.4KB/454.4KB
+[K[32m✔︎[0m Bottle Manifest freetype (2.14.2)                  Downloaded    9.2KB/  9.2KB
+[K[32m✔︎[0m Bottle freetype (2.14.2)                           Downloaded    1.0MB/  1.0MB
+[K[32m✔︎[0m Bottle Manifest fontconfig (2.17.1)                Downloaded   17.3KB/ 17.3KB
+[K[32m✔︎[0m Bottle fontconfig (2.17.1)                         Downloaded  384.7KB/384.7KB
+[K[32m✔︎[0m Bottle Manifest glib (2.86.4)                      Downloaded   20.3KB/ 20.3KB
+[K[32m✔︎[0m Bottle glib (2.86.4)                               Downloaded    8.8MB/  8.8MB
+[K[32m✔︎[0m Bottle Manifest xorgproto (2025.1)                 Downloaded   13.1KB/ 13.1KB
+[K[32m✔︎[0m Bottle xorgproto (2025.1)                          Downloaded  720.1KB/720.1KB
+[K[32m✔︎[0m Bottle Manifest libxau (1.0.12)                    Downloaded   10.3KB/ 10.3KB
+[K[32m✔︎[0m Bottle libxau (1.0.12)                             Downloaded   31.3KB/ 31.3KB
+[K[32m✔︎[0m Bottle Manifest libxdmcp (1.1.5)                   Downloaded   12.0KB/ 12.0KB
+[K[32m✔︎[0m Bottle libxdmcp (1.1.5)                            Downloaded   35.9KB/ 35.9KB
+[K[32m✔︎[0m Bottle Manifest libxcb (1.17.0)                    Downloaded   19.2KB/ 19.2KB
+[K[32m✔︎[0m Bottle Manifest libx11 (1.8.13)                    Downloaded   14.4KB/ 14.4KB
+[K[32m✔︎[0m Bottle Manifest libxext (1.3.7)                    Downloaded   11.5KB/ 11.5KB
+[K[32m✔︎[0m Bottle libxext (1.3.7)                             Downloaded  109.2KB/109.2KB
+[K[32m✔︎[0m Bottle Manifest libxrender (0.9.12)                Downloaded   14.2KB/ 14.2KB
+[K[32m✔︎[0m Bottle Manifest lzo (2.10)                         Downloaded   16.7KB/ 16.7KB
+[K[34m⠙[0m Bottle libxcb (1.17.0)                             Extracting  961.0KB/961.0KB
+[K[34m⠙[0m Bottle libx11 (1.8.13)                             Extracting    2.3MB/  2.3MB
+[K[34m⠙[0m Bottle libxrender (0.9.12)
+[K[34m⠙[0m Bottle lzo (2.10)
+[K[34m⠙[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠙[0m Bottle pixman (0.46.4)
+[K[34m⠙[0m Bottle cairo (1.18.4)[K[6F[32m✔︎[0m Bottle libx11 (1.8.13)                             Downloaded    2.3MB/  2.3MB
+[K[34m⠙[0m Bottle libxcb (1.17.0)                             Extracting  961.0KB/961.0KB
+[K[34m⠙[0m Bottle libxrender (0.9.12)
+[K[34m⠙[0m Bottle lzo (2.10)
+[K[34m⠚[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠚[0m Bottle pixman (0.46.4)
+[K[34m⠚[0m Bottle cairo (1.18.4)[K[5F[32m✔︎[0m Bottle libxcb (1.17.0)                             Downloaded  961.0KB/961.0KB
+[K[34m⠚[0m Bottle libxrender (0.9.12)
+[K[34m⠚[0m Bottle lzo (2.10)
+[K[34m⠚[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠚[0m Bottle pixman (0.46.4)
+[K[34m⠚[0m Bottle cairo (1.18.4)[K[4F[34m⠞[0m Bottle libxrender (0.9.12)
+[K[34m⠞[0m Bottle lzo (2.10)
+[K[34m⠞[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠞[0m Bottle pixman (0.46.4)
+[K[34m⠞[0m Bottle cairo (1.18.4)[K[4F[34m⠞[0m Bottle libxrender (0.9.12)
+[K[34m⠞[0m Bottle lzo (2.10)
+[K[34m⠞[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠞[0m Bottle pixman (0.46.4)
+[K[34m⠞[0m Bottle cairo (1.18.4)[K[4F[34m⠖[0m Bottle libxrender (0.9.12)
+[K[34m⠖[0m Bottle lzo (2.10)
+[K[34m⠖[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠖[0m Bottle pixman (0.46.4)
+[K[34m⠖[0m Bottle cairo (1.18.4)[K[4F[34m⠖[0m Bottle libxrender (0.9.12)
+[K[34m⠖[0m Bottle lzo (2.10)
+[K[34m⠖[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠖[0m Bottle pixman (0.46.4)
+[K[34m⠖[0m Bottle cairo (1.18.4)[K[4F[34m⠦[0m Bottle libxrender (0.9.12)
+[K[34m⠦[0m Bottle lzo (2.10)
+[K[34m⠦[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠦[0m Bottle pixman (0.46.4)
+[K[34m⠦[0m Bottle cairo (1.18.4)[K[4F[34m⠦[0m Bottle libxrender (0.9.12)
+[K[34m⠦[0m Bottle lzo (2.10)
+[K[34m⠦[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠦[0m Bottle pixman (0.46.4)
+[K[34m⠦[0m Bottle cairo (1.18.4)[K[4F[34m⠴[0m Bottle libxrender (0.9.12)
+[K[34m⠴[0m Bottle lzo (2.10)
+[K[34m⠴[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠴[0m Bottle pixman (0.46.4)
+[K[34m⠴[0m Bottle cairo (1.18.4)[K[4F[34m⠴[0m Bottle libxrender (0.9.12)
+[K[34m⠴[0m Bottle lzo (2.10)
+[K[34m⠴[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠴[0m Bottle pixman (0.46.4)
+[K[34m⠴[0m Bottle cairo (1.18.4)[K[4F[34m⠲[0m Bottle libxrender (0.9.12)
+[K[34m⠲[0m Bottle lzo (2.10)
+[K[34m⠲[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠲[0m Bottle pixman (0.46.4)
+[K[34m⠲[0m Bottle cairo (1.18.4)[K[4F[34m⠲[0m Bottle libxrender (0.9.12)
+[K[34m⠲[0m Bottle lzo (2.10)
+[K[34m⠲[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠲[0m Bottle pixman (0.46.4)
+[K[34m⠲[0m Bottle cairo (1.18.4)[K[4F[34m⠳[0m Bottle libxrender (0.9.12)
+[K[34m⠳[0m Bottle lzo (2.10)
+[K[34m⠳[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠳[0m Bottle pixman (0.46.4)
+[K[34m⠳[0m Bottle cairo (1.18.4)[K[4F[34m⠳[0m Bottle libxrender (0.9.12)
+[K[34m⠳[0m Bottle lzo (2.10)
+[K[34m⠳[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠳[0m Bottle pixman (0.46.4)
+[K[34m⠳[0m Bottle cairo (1.18.4)[K[4F[34m⠓[0m Bottle libxrender (0.9.12)
+[K[34m⠓[0m Bottle lzo (2.10)
+[K[34m⠓[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠓[0m Bottle pixman (0.46.4)
+[K[34m⠓[0m Bottle cairo (1.18.4)[K[4F[34m⠓[0m Bottle libxrender (0.9.12)
+[K[34m⠓[0m Bottle lzo (2.10)
+[K[34m⠓[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠓[0m Bottle pixman (0.46.4)
+[K[34m⠓[0m Bottle cairo (1.18.4)[K[4F[34m⠋[0m Bottle libxrender (0.9.12)
+[K[34m⠋[0m Bottle lzo (2.10)
+[K[34m⠋[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠋[0m Bottle pixman (0.46.4)
+[K[34m⠋[0m Bottle cairo (1.18.4)[K[4F[34m⠋[0m Bottle libxrender (0.9.12)
+[K[34m⠋[0m Bottle lzo (2.10)
+[K[34m⠋[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠋[0m Bottle pixman (0.46.4)
+[K[34m⠋[0m Bottle cairo (1.18.4)[K[4F[34m⠙[0m Bottle libxrender (0.9.12)
+[K[34m⠙[0m Bottle lzo (2.10)
+[K[34m⠙[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠙[0m Bottle pixman (0.46.4)
+[K[34m⠙[0m Bottle cairo (1.18.4)[K[4F[34m⠙[0m Bottle libxrender (0.9.12)
+[K[34m⠙[0m Bottle lzo (2.10)
+[K[34m⠙[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠙[0m Bottle pixman (0.46.4)
+[K[34m⠙[0m Bottle cairo (1.18.4)[K[4F[34m⠚[0m Bottle libxrender (0.9.12)
+[K[34m⠚[0m Bottle lzo (2.10)
+[K[34m⠚[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠚[0m Bottle pixman (0.46.4)
+[K[34m⠚[0m Bottle cairo (1.18.4)[K[4F[34m⠚[0m Bottle libxrender (0.9.12)
+[K[34m⠚[0m Bottle lzo (2.10)
+[K[34m⠚[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠚[0m Bottle pixman (0.46.4)
+[K[34m⠚[0m Bottle cairo (1.18.4)[K[4F[34m⠞[0m Bottle libxrender (0.9.12)
+[K[34m⠞[0m Bottle lzo (2.10)
+[K[34m⠞[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠞[0m Bottle pixman (0.46.4)
+[K[34m⠞[0m Bottle cairo (1.18.4)[K[4F[34m⠞[0m Bottle libxrender (0.9.12)
+[K[34m⠞[0m Bottle lzo (2.10)
+[K[34m⠞[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠞[0m Bottle pixman (0.46.4)
+[K[34m⠞[0m Bottle cairo (1.18.4)[K[4F[34m⠖[0m Bottle libxrender (0.9.12)
+[K[34m⠖[0m Bottle lzo (2.10)
+[K[34m⠖[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠖[0m Bottle pixman (0.46.4)
+[K[34m⠖[0m Bottle cairo (1.18.4)[K[4F[34m⠖[0m Bottle libxrender (0.9.12)
+[K[34m⠖[0m Bottle lzo (2.10)
+[K[34m⠖[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠖[0m Bottle pixman (0.46.4)
+[K[34m⠖[0m Bottle cairo (1.18.4)[K[4F[34m⠦[0m Bottle libxrender (0.9.12)
+[K[34m⠦[0m Bottle lzo (2.10)
+[K[34m⠦[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠦[0m Bottle pixman (0.46.4)
+[K[34m⠦[0m Bottle cairo (1.18.4)[K[4F[34m⠦[0m Bottle libxrender (0.9.12)
+[K[34m⠦[0m Bottle lzo (2.10)
+[K[34m⠦[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠦[0m Bottle pixman (0.46.4)
+[K[34m⠦[0m Bottle cairo (1.18.4)[K[4F[34m⠴[0m Bottle libxrender (0.9.12)
+[K[34m⠴[0m Bottle lzo (2.10)
+[K[34m⠴[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠴[0m Bottle pixman (0.46.4)
+[K[34m⠴[0m Bottle cairo (1.18.4)[K[4F[34m⠴[0m Bottle libxrender (0.9.12)
+[K[34m⠴[0m Bottle lzo (2.10)
+[K[34m⠴[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠴[0m Bottle pixman (0.46.4)
+[K[34m⠴[0m Bottle cairo (1.18.4)[K[4F[34m⠲[0m Bottle libxrender (0.9.12)
+[K[34m⠲[0m Bottle lzo (2.10)
+[K[34m⠲[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠲[0m Bottle pixman (0.46.4)
+[K[34m⠲[0m Bottle cairo (1.18.4)[K[4F[34m⠲[0m Bottle libxrender (0.9.12)
+[K[34m⠲[0m Bottle lzo (2.10)
+[K[34m⠲[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠲[0m Bottle pixman (0.46.4)
+[K[34m⠲[0m Bottle cairo (1.18.4)[K[4F[34m⠳[0m Bottle libxrender (0.9.12)
+[K[34m⠳[0m Bottle lzo (2.10)
+[K[34m⠳[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠳[0m Bottle pixman (0.46.4)
+[K[34m⠳[0m Bottle cairo (1.18.4)[K[4F[34m⠳[0m Bottle libxrender (0.9.12)
+[K[34m⠳[0m Bottle lzo (2.10)
+[K[34m⠳[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠳[0m Bottle pixman (0.46.4)
+[K[34m⠳[0m Bottle cairo (1.18.4)[K[4F[34m⠓[0m Bottle libxrender (0.9.12)
+[K[34m⠓[0m Bottle lzo (2.10)
+[K[34m⠓[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠓[0m Bottle pixman (0.46.4)
+[K[34m⠓[0m Bottle cairo (1.18.4)[K[4F[34m⠓[0m Bottle libxrender (0.9.12)
+[K[34m⠓[0m Bottle lzo (2.10)
+[K[34m⠓[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠓[0m Bottle pixman (0.46.4)
+[K[34m⠓[0m Bottle cairo (1.18.4)[K[4F[34m⠋[0m Bottle libxrender (0.9.12)
+[K[34m⠋[0m Bottle lzo (2.10)
+[K[34m⠋[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠋[0m Bottle pixman (0.46.4)
+[K[34m⠋[0m Bottle cairo (1.18.4)[K[4F[34m⠋[0m Bottle libxrender (0.9.12)
+[K[34m⠋[0m Bottle lzo (2.10)
+[K[34m⠋[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠋[0m Bottle pixman (0.46.4)
+[K[34m⠋[0m Bottle cairo (1.18.4)[K[4F[34m⠙[0m Bottle libxrender (0.9.12)
+[K[34m⠙[0m Bottle lzo (2.10)
+[K[34m⠙[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠙[0m Bottle pixman (0.46.4)
+[K[34m⠙[0m Bottle cairo (1.18.4)[K[4F[34m⠙[0m Bottle libxrender (0.9.12)
+[K[34m⠙[0m Bottle lzo (2.10)
+[K[34m⠙[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠙[0m Bottle pixman (0.46.4)
+[K[34m⠙[0m Bottle cairo (1.18.4)[K[4F[34m⠚[0m Bottle libxrender (0.9.12)
+[K[34m⠚[0m Bottle lzo (2.10)
+[K[34m⠚[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠚[0m Bottle pixman (0.46.4)
+[K[34m⠚[0m Bottle cairo (1.18.4)[K[4F[34m⠚[0m Bottle libxrender (0.9.12)
+[K[34m⠚[0m Bottle lzo (2.10)
+[K[34m⠚[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠚[0m Bottle pixman (0.46.4)
+[K[34m⠚[0m Bottle cairo (1.18.4)[K[4F[34m⠞[0m Bottle libxrender (0.9.12)
+[K[34m⠞[0m Bottle lzo (2.10)
+[K[34m⠞[0m Bottle Manifest pixman (0.46.4)
+[K[34m⠞[0m Bottle pixman (0.46.4)
+[K[34m⠞[0m Bottle cairo (1.18.4)[K[4F[32m✔︎[0m Bottle Manifest pixman (0.46.4)                    Downloaded    9.3KB/  9.3KB
+[K[34m⠞[0m Bottle libxrender (0.9.12)
+[K[34m⠞[0m Bottle lzo (2.10)
+[K[34m⠞[0m Bottle pixman (0.46.4)
+[K[34m⠞[0m Bottle cairo (1.18.4)[K[3F[34m⠖[0m Bottle libxrender (0.9.12)
+[K[34m⠖[0m Bottle lzo (2.10)
+[K[34m⠖[0m Bottle pixman (0.46.4)
+[K[34m⠖[0m Bottle cairo (1.18.4)[K[3F[34m⠖[0m Bottle libxrender (0.9.12)          ##########     Downloading  36.9KB/ 54.3KB
+[K[34m⠖[0m Bottle lzo (2.10)
+[K[34m⠖[0m Bottle pixman (0.46.4)
+[K[34m⠖[0m Bottle cairo (1.18.4)[K[3F[34m⠦[0m Bottle libxrender (0.9.12)                         Extracting   54.3KB/ 54.3KB
+[K[34m⠦[0m Bottle lzo (2.10)
+[K[34m⠦[0m Bottle pixman (0.46.4)
+[K[34m⠦[0m Bottle cairo (1.18.4)[K[3F[34m⠦[0m Bottle libxrender (0.9.12)                         Extracting   54.3KB/ 54.3KB
+[K[34m⠦[0m Bottle lzo (2.10)                   ##             Downloading  20.5KB/151.7KB
+[K[34m⠦[0m Bottle pixman (0.46.4)
+[K[34m⠦[0m Bottle cairo (1.18.4)[K[3F[34m⠴[0m Bottle libxrender (0.9.12)                         Extracting   54.3KB/ 54.3KB
+[K[34m⠴[0m Bottle lzo (2.10)                   #####          Downloading  57.3KB/151.7KB
+[K[34m⠴[0m Bottle pixman (0.46.4)
+[K[34m⠴[0m Bottle cairo (1.18.4)[K[3F[34m⠴[0m Bottle libxrender (0.9.12)                         Extracting   54.3KB/ 54.3KB
+[K[34m⠴[0m Bottle lzo (2.10)                   ##########     Downloading 110.6KB/151.7KB
+[K[34m⠴[0m Bottle pixman (0.46.4)
+[K[34m⠴[0m Bottle cairo (1.18.4)[K[3F[34m⠲[0m Bottle libxrender (0.9.12)                         Extracting   54.3KB/ 54.3KB
+[K[34m⠲[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠲[0m Bottle pixman (0.46.4)
+[K[34m⠲[0m Bottle cairo (1.18.4)[K[3F[34m⠲[0m Bottle libxrender (0.9.12)                         Extracting   54.3KB/ 54.3KB
+[K[34m⠲[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠲[0m Bottle pixman (0.46.4)
+[K[34m⠲[0m Bottle cairo (1.18.4)[K[3F[34m⠳[0m Bottle libxrender (0.9.12)                         Extracting   54.3KB/ 54.3KB
+[K[34m⠳[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠳[0m Bottle pixman (0.46.4)
+[K[34m⠳[0m Bottle cairo (1.18.4)[K[3F[34m⠳[0m Bottle libxrender (0.9.12)                         Extracting   54.3KB/ 54.3KB
+[K[34m⠳[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠳[0m Bottle pixman (0.46.4)
+[K[34m⠳[0m Bottle cairo (1.18.4)[K[3F[34m⠓[0m Bottle libxrender (0.9.12)                         Extracting   54.3KB/ 54.3KB
+[K[34m⠓[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠓[0m Bottle pixman (0.46.4)
+[K[34m⠓[0m Bottle cairo (1.18.4)[K[3F[34m⠓[0m Bottle libxrender (0.9.12)                         Extracting   54.3KB/ 54.3KB
+[K[34m⠓[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠓[0m Bottle pixman (0.46.4)
+[K[34m⠓[0m Bottle cairo (1.18.4)[K[3F[34m⠋[0m Bottle libxrender (0.9.12)                         Extracting   54.3KB/ 54.3KB
+[K[34m⠋[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠋[0m Bottle pixman (0.46.4)
+[K[34m⠋[0m Bottle cairo (1.18.4)[K[3F[34m⠋[0m Bottle libxrender (0.9.12)                         Extracting   54.3KB/ 54.3KB
+[K[34m⠋[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠋[0m Bottle pixman (0.46.4)
+[K[34m⠋[0m Bottle cairo (1.18.4)[K[3F[34m⠙[0m Bottle libxrender (0.9.12)                         Extracting   54.3KB/ 54.3KB
+[K[34m⠙[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠙[0m Bottle pixman (0.46.4)              #              Downloading  36.9KB/544.5KB
+[K[34m⠙[0m Bottle cairo (1.18.4)[K[3F[34m⠙[0m Bottle libxrender (0.9.12)                         Extracting   54.3KB/ 54.3KB
+[K[34m⠙[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠙[0m Bottle pixman (0.46.4)              ##             Downloading  73.7KB/544.5KB
+[K[34m⠙[0m Bottle cairo (1.18.4)[K[3F[34m⠚[0m Bottle libxrender (0.9.12)                         Extracting   54.3KB/ 54.3KB
+[K[34m⠚[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠚[0m Bottle pixman (0.46.4)              #####          Downloading 176.1KB/544.5KB
+[K[34m⠚[0m Bottle cairo (1.18.4)[K[3F[34m⠚[0m Bottle libxrender (0.9.12)                         Extracting   54.3KB/ 54.3KB
+[K[34m⠚[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠚[0m Bottle pixman (0.46.4)              #########      Downloading 340.0KB/544.5KB
+[K[34m⠚[0m Bottle cairo (1.18.4)                              Downloading   8.2KB/  1.6MB[K[3F[34m⠞[0m Bottle libxrender (0.9.12)                         Extracting   54.3KB/ 54.3KB
+[K[34m⠞[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠞[0m Bottle pixman (0.46.4)                             Extracting  544.5KB/544.5KB
+[K[34m⠞[0m Bottle cairo (1.18.4)               #              Downloading  77.8KB/  1.6MB[K[3F[32m✔︎[0m Bottle libxrender (0.9.12)                         Downloaded   54.3KB/ 54.3KB
+[K[34m⠞[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠞[0m Bottle pixman (0.46.4)                             Extracting  544.5KB/544.5KB
+[K[34m⠞[0m Bottle cairo (1.18.4)               #              Downloading 159.7KB/  1.6MB[K[2F[34m⠖[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠖[0m Bottle pixman (0.46.4)                             Extracting  544.5KB/544.5KB
+[K[34m⠖[0m Bottle cairo (1.18.4)               ###            Downloading 290.8KB/  1.6MB[K[2F[34m⠖[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠖[0m Bottle pixman (0.46.4)                             Extracting  544.5KB/544.5KB
+[K[34m⠖[0m Bottle cairo (1.18.4)               ######         Downloading 651.3KB/  1.6MB[K[2F[34m⠦[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠦[0m Bottle pixman (0.46.4)                             Extracting  544.5KB/544.5KB
+[K[34m⠦[0m Bottle cairo (1.18.4)               ##########     Downloading   1.1MB/  1.6MB[K[2F[34m⠦[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠦[0m Bottle pixman (0.46.4)                             Extracting  544.5KB/544.5KB
+[K[34m⠦[0m Bottle cairo (1.18.4)                              Downloaded    1.6MB/  1.6MB[K[2F[34m⠴[0m Bottle lzo (2.10)                                  Extracting  151.7KB/151.7KB
+[K[34m⠴[0m Bottle pixman (0.46.4)                             Extracting  544.5KB/544.5KB
+[K[34m⠴[0m Bottle cairo (1.18.4)                              Extracting    1.6MB/  1.6MB[K[2F[32m✔︎[0m Bottle lzo (2.10)                                  Downloaded  151.7KB/151.7KB
+[K[34m⠴[0m Bottle pixman (0.46.4)                             Extracting  544.5KB/544.5KB
+[K[34m⠴[0m Bottle cairo (1.18.4)                              Extracting    1.6MB/  1.6MB[K[1F[34m⠲[0m Bottle pixman (0.46.4)                             Extracting  544.5KB/544.5KB
+[K[34m⠲[0m Bottle cairo (1.18.4)                              Extracting    1.6MB/  1.6MB[K[1F[34m⠲[0m Bottle pixman (0.46.4)                             Extracting  544.5KB/544.5KB
+[K[34m⠲[0m Bottle cairo (1.18.4)                              Extracting    1.6MB/  1.6MB[K[1F[34m⠳[0m Bottle pixman (0.46.4)                             Extracting  544.5KB/544.5KB
+[K[34m⠳[0m Bottle cairo (1.18.4)                              Extracting    1.6MB/  1.6MB[K[1F[34m⠳[0m Bottle pixman (0.46.4)                             Extracting  544.5KB/544.5KB
+[K[34m⠳[0m Bottle cairo (1.18.4)                              Extracting    1.6MB/  1.6MB[K[1F[34m⠓[0m Bottle pixman (0.46.4)                             Extracting  544.5KB/544.5KB
+[K[34m⠓[0m Bottle cairo (1.18.4)                              Extracting    1.6MB/  1.6MB[K[1F[34m⠓[0m Bottle pixman (0.46.4)                             Extracting  544.5KB/544.5KB
+[K[34m⠓[0m Bottle cairo (1.18.4)                              Extracting    1.6MB/  1.6MB[K[1F[34m⠋[0m Bottle pixman (0.46.4)                             Extracting  544.5KB/544.5KB
+[K[34m⠋[0m Bottle cairo (1.18.4)                              Extracting    1.6MB/  1.6MB[K[1F[32m✔︎[0m Bottle pixman (0.46.4)                             Downloaded  544.5KB/544.5KB
+[K[34m⠋[0m Bottle cairo (1.18.4)                              Extracting    1.6MB/  1.6MB[K[0G[34m⠙[0m Bottle cairo (1.18.4)                              Extracting    1.6MB/  1.6MB[K[0G[34m⠙[0m Bottle cairo (1.18.4)                              Extracting    1.6MB/  1.6MB[K[0G[32m✔︎[0m Bottle cairo (1.18.4)                              Downloaded    1.6MB/  1.6MB
+[K[?25h[32m==>[0m [1mInstalling dependencies for cairo: [32mlibpng[39m, [32mfreetype[39m, [32mfontconfig[39m, [32mglib[39m, [32mxorgproto[39m, [32mlibxau[39m, [32mlibxdmcp[39m, [32mlibxcb[39m, [32mlibx11[39m, [32mlibxext[39m, [32mlibxrender[39m, [32mlzo[39m and [32mpixman[39m[0m
+[32m==>[0m [1mInstalling cairo dependency: [32mlibpng[39m[0m
+[34m==>[0m [1mPouring libpng--1.6.55.sonoma.bottle.tar.gz[0m
+🍺  /usr/local/Cellar/libpng/1.6.55: 28 files, 1.3MB
+[32m==>[0m [1mInstalling cairo dependency: [32mfreetype[39m[0m
+[34m==>[0m [1mPouring freetype--2.14.2.sonoma.bottle.tar.gz[0m
+🍺  /usr/local/Cellar/freetype/2.14.2: 68 files, 2.8MB
+[32m==>[0m [1mInstalling cairo dependency: [32mfontconfig[39m[0m
+[34m==>[0m [1mPouring fontconfig--2.17.1.sonoma.bottle.1.tar.gz[0m
+[34m==>[0m [1mRegenerating font cache, this may take a while[0m
+[34m==>[0m [1m/usr/local/Cellar/fontconfig/2.17.1/bin/fc-cache --force --really-force --ve[0m
+🍺  /usr/local/Cellar/fontconfig/2.17.1: 98 files, 1.2MB
+[32m==>[0m [1mInstalling cairo dependency: [32mglib[39m[0m
+[34m==>[0m [1mPouring glib--2.86.4.sonoma.bottle.tar.gz[0m
+🍺  /usr/local/Cellar/glib/2.86.4: 504 files, 36.9MB
+[32m==>[0m [1mInstalling cairo dependency: [32mxorgproto[39m[0m
+[34m==>[0m [1mPouring xorgproto--2025.1.sonoma.bottle.tar.gz[0m
+^C .venv/bin/python -c "import cairosvg; print('cairosvg ok:', cairosvg.__version__)"
+[33mWarning:[0m The post-install step did not complete successfully
+You can try again using:
+  brew postinstall xorgproto
+[33mWarning:[0m Removed Sorbet lines from backtrace!
+Rerun with `--verbose` to see the original backtrace
+[34m==>[0m [1mSummary[0m
+🍺  /usr/local/Cellar/xorgproto/2025.1: 268 files, 4.1MB
+[32m==>[0m [1mInstalling cairo dependency: [32mlibxau[39m[0m
+^C
+ python -c "import cairosvg; print(cairosvg.__version__)"
+[1m[7m%[27m[1m[0m                                                                                ]633;D;130]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  python -c "import cairosvg;  [Kpprint(cairosvg.__version__)"[?2004l
+]633;E; python -c "import cairosvg\x3b print(cairosvg.__version__)";]633;CTraceback (most recent call last):
+  File [35m"<string>"[0m, line [35m1[0m, in [35m<module>[0m
+    [1;31mimport cairosvg[0m; print(cairosvg.__version__)
+    [1;31m^^^^^^^^^^^^^^^[0m
+  File [35m"/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset/.venv/lib/python3.13/site-packages/cairosvg/__init__.py"[0m, line [35m25[0m, in [35m<module>[0m
+    [1;31mfrom . import surface[0m  # noqa isort:skip
+    [1;31m^^^^^^^^^^^^^^^^^^^^^[0m
+  File [35m"/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset/.venv/lib/python3.13/site-packages/cairosvg/surface.py"[0m, line [35m9[0m, in [35m<module>[0m
+    import cairocffi as cairo
+  File [35m"/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset/.venv/lib/python3.13/site-packages/cairocffi/__init__.py"[0m, line [35m60[0m, in [35m<module>[0m
+    cairo = dlopen(
+        ffi, ('cairo-2', 'cairo', 'libcairo-2'),
+        ('libcairo.so.2', 'libcairo.2.dylib', 'libcairo-2.dll'))
+  File [35m"/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset/.venv/lib/python3.13/site-packages/cairocffi/__init__.py"[0m, line [35m57[0m, in [35mdlopen[0m
+    [1;31mraise OSError(error_message)[0m  # pragma: no cover
+    [1;31m^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[1;35mOSError[0m: [35mno library called "cairo-2" was found
+no library called "cairo" was found
+no library called "libcairo-2" was found
+cannot load library 'libcairo.so.2': dlopen(libcairo.so.2, 0x0002): tried: 'libcairo.so.2' (no such file), '/System/Volumes/Preboot/Cryptexes/OSlibcairo.so.2' (no such file), '/usr/lib/libcairo.so.2' (no such file, not in dyld cache), 'libcairo.so.2' (no such file).  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libcairo.so.2'
+cannot load library 'libcairo.2.dylib': dlopen(libcairo.2.dylib, 0x0002): tried: 'libcairo.2.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OSlibcairo.2.dylib' (no such file), '/usr/lib/libcairo.2.dylib' (no such file, not in dyld cache), 'libcairo.2.dylib' (no such file).  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libcairo.2.dylib'
+cannot load library 'libcairo-2.dll': dlopen(libcairo-2.dll, 0x0002): tried: 'libcairo-2.dll' (no such file), '/System/Volumes/Preboot/Cryptexes/OSlibcairo-2.dll' (no such file), '/usr/lib/libcairo-2.dll' (no such file, not in dyld cache), 'libcairo-2.dll' (no such file).  Additionally, ctypes.util.find_library() did not manage to locate a library called 'libcairo-2.dll'[0m
+[1m[7m%[27m[1m[0m                                                                                ]633;D;1]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  brew list cairo 2>/dev/null  [K&&& echo "Cairo installed" || echo "Cairo not installed"[?2004l
+]633;E; brew list cairo 2>/dev/null && echo "Cairo installed" || echo "Cairo not installed";]633;C^C
+[1m[7m%[27m[1m[0m                                                                                ]633;D;130]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  python -c "import cairosvg;  [Kpprint(cairosvg.__version__)" 2>&1 | head -3[?2004l
+]633;E; python -c "import cairosvg\x3b print(cairosvg.__version__)" 2>&1 | head -3;]633;CTraceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import cairosvg; print(cairosvg.__version__)
+[1m[7m%[27m[1m[0m                                                                                ]633;D;0]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  ls /usr/local/lib/libcairo*  [K22>/dev/null || ls /opt/homebrew/lib/libcairo* 2>/dev/null || echo "Cairo lib not [K  found"[?2004l
+]633;E; ls /usr/local/lib/libcairo* 2>/dev/null || ls /opt/homebrew/lib/libcairo* 2>/dev/null || echo "Cairo lib not found";]633;Czsh: no matches found: /usr/local/lib/libcairo*
+zsh: no matches found: /opt/homebrew/lib/libcairo*
+Cairo lib not found
+[1m[7m%[27m[1m[0m                                                                                ]633;D;0]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  nohup brew install cairo > / [Kttmp/brew_cairo.log 2>&1 & echo "PID: $!"[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]633;E;;]633;C]633;D q
+]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  q[?2004l
+]633;E; q;]633;Czsh: command not found: q
+[1m[7m%[27m[1m[0m                                                                                ]633;D;127]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  "[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                ]633;E;;]633;C]633;D]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  ; q[?2004l
+]633;E; \x3b q;]633;Czsh: command not found: q
+[1m[7m%[27m[1m[0m                                                                                ]633;D;127]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  ps aux | grep brew | grep ca [Kiiro | grep -v grep[?2004l
+]633;E; ps aux | grep brew | grep cairo | grep -v grep;]633;C[1m[7m%[27m[1m[0m                                                                                ]633;D;1]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  brew list --formula | grep c [Kaairo; tail -10 /tmp/brew_cairo.log 2>/dev/null[?2004l
+]633;E; brew list --formula | grep cairo\x3b tail -10 /tmp/brew_cairo.log 2>/dev/null;]633;C[1m[7m%[27m[1m[0m                                                                                ]633;D;1]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  brew install cairo[?2004l
+]633;E; brew install cairo;]633;C[32m==>[0m [1mFetching downloads for: [32mcairo[39m[0m
+[?25l[32m✔︎[0m Bottle Manifest cairo (1.18.4)                     Downloaded   29.8KB/ 29.8KB[K[0G[32m✔︎[0m Bottle Manifest cairo (1.18.4)                     Downloaded   29.8KB/ 29.8KB
+[K[?25h[?25l[32m✔︎[0m Bottle Manifest libxau (1.0.12)                    Downloaded   10.3KB/ 10.3KB
+[K[32m✔︎[0m Bottle libxau (1.0.12)                             Downloaded   31.3KB/ 31.3KB
+[K[32m✔︎[0m Bottle Manifest libxdmcp (1.1.5)                   Downloaded   12.0KB/ 12.0KB
+[K[32m✔︎[0m Bottle libxdmcp (1.1.5)                            Downloaded   35.9KB/ 35.9KB
+[K[32m✔︎[0m Bottle Manifest libxcb (1.17.0)                    Downloaded   19.2KB/ 19.2KB
+[K[32m✔︎[0m Bottle libxcb (1.17.0)                             Downloaded  961.0KB/961.0KB
+[K[32m✔︎[0m Bottle Manifest libx11 (1.8.13)                    Downloaded   14.4KB/ 14.4KB
+[K[32m✔︎[0m Bottle libx11 (1.8.13)                             Downloaded    2.3MB/  2.3MB
+[K[32m✔︎[0m Bottle Manifest libxext (1.3.7)                    Downloaded   11.5KB/ 11.5KB
+[K[32m✔︎[0m Bottle libxext (1.3.7)                             Downloaded  109.2KB/109.2KB
+[K[32m✔︎[0m Bottle Manifest libxrender (0.9.12)                Downloaded   14.2KB/ 14.2KB
+[K[32m✔︎[0m Bottle libxrender (0.9.12)                         Downloaded   54.3KB/ 54.3KB
+[K[32m✔︎[0m Bottle Manifest lzo (2.10)                         Downloaded   16.7KB/ 16.7KB
+[K[32m✔︎[0m Bottle lzo (2.10)                                  Downloaded  151.7KB/151.7KB
+[K[32m✔︎[0m Bottle Manifest pixman (0.46.4)                    Downloaded    9.3KB/  9.3KB
+[K[32m✔︎[0m Bottle pixman (0.46.4)                             Downloaded  544.5KB/544.5KB
+[K[34m⠋[0m Bottle cairo (1.18.4)                              Downloaded    1.6MB/  1.6MB[K[1F[32m✔︎[0m Bottle pixman (0.46.4)                             Downloaded  544.5KB/544.5KB
+[K[32m✔︎[0m Bottle cairo (1.18.4)                              Downloaded    1.6MB/  1.6MB
+[K[?25h[32m==>[0m [1mInstalling dependencies for cairo: [32mlibxau[39m, [32mlibxdmcp[39m, [32mlibxcb[39m, [32mlibx11[39m, [32mlibxext[39m, [32mlibxrender[39m, [32mlzo[39m and [32mpixman[39m[0m
+[32m==>[0m [1mInstalling cairo dependency: [32mlibxau[39m[0m
+[34m==>[0m [1mPouring libxau--1.0.12.sonoma.bottle.tar.gz[0m
+🍺  /usr/local/Cellar/libxau/1.0.12: 21 files, 96.8KB
+[32m==>[0m [1mInstalling cairo dependency: [32mlibxdmcp[39m[0m
+[34m==>[0m [1mPouring libxdmcp--1.1.5.sonoma.bottle.tar.gz[0m
+🍺  /usr/local/Cellar/libxdmcp/1.1.5: 12 files, 124.5KB
+[32m==>[0m [1mInstalling cairo dependency: [32mlibxcb[39m[0m
+[34m==>[0m [1mPouring libxcb--1.17.0.sonoma.bottle.1.tar.gz[0m
+🍺  /usr/local/Cellar/libxcb/1.17.0: 2,498 files, 6.6MB
+[32m==>[0m [1mInstalling cairo dependency: [32mlibx11[39m[0m
+[34m==>[0m [1mPouring libx11--1.8.13.sonoma.bottle.tar.gz[0m
+🍺  /usr/local/Cellar/libx11/1.8.13: 1,043 files, 7.1MB
+[32m==>[0m [1mInstalling cairo dependency: [32mlibxext[39m[0m
+[34m==>[0m [1mPouring libxext--1.3.7.sonoma.bottle.tar.gz[0m
+🍺  /usr/local/Cellar/libxext/1.3.7: 88 files, 415.4KB
+[32m==>[0m [1mInstalling cairo dependency: [32mlibxrender[39m[0m
+[34m==>[0m [1mPouring libxrender--0.9.12.sonoma.bottle.tar.gz[0m
+🍺  /usr/local/Cellar/libxrender/0.9.12: 13 files, 179.7KB
+[32m==>[0m [1mInstalling cairo dependency: [32mlzo[39m[0m
+[34m==>[0m [1mPouring lzo--2.10.sonoma.bottle.tar.gz[0m
+🍺  /usr/local/Cellar/lzo/2.10: 32 files, 570.8KB
+[32m==>[0m [1mInstalling cairo dependency: [32mpixman[39m[0m
+[34m==>[0m [1mPouring pixman--0.46.4.sonoma.bottle.1.tar.gz[0m
+🍺  /usr/local/Cellar/pixman/0.46.4: 11 files, 1.5MB
+[32m==>[0m [1mInstalling [32mcairo[39m[0m
+[34m==>[0m [1mPouring cairo--1.18.4.sonoma.bottle.2.tar.gz[0m
+🍺  /usr/local/Cellar/cairo/1.18.4: 58 files, 4.4MB
+[34m==>[0m [1mRunning `brew cleanup cairo`...[0m
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+[1m[7m%[27m[1m[0m                                                                                ]633;D;0]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  python -c "import cairosvg;  [Kpprint('cairosvg', cairosvg.__version__)"[?2004l
+]633;E; python -c "import cairosvg\x3b print('cairosvg', cairosvg.__version__)";]633;Ccairosvg 2.8.2
+[1m[7m%[27m[1m[0m                                                                                ]633;D;0]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  python /tmp/fetch_missing_lo [Kggos.py[?2004l
+]633;E; python /tmp/fetch_missing_logos.py;]633;C[FAIL] Pennzoil                 : No se encontro un logo en el DOM con las heuristicas definidas.
+[OK]   Total Energies            -> site.png
+[OK]   Repsol                    -> site.png
+[OK]   Lucas Oil                 -> site.png
+[FAIL] Royal Purple             : No se encontro un logo en el DOM con las heuristicas definidas.
+[OK]   Turtle Wax                -> site.png
+[FAIL] Meguiar's                : HTTPSConnectionPool(host='www.meguiars.com', port=443): Read timed out. (read timeout=20)
+[FAIL] Permatex                 : logo DOM invalido: tamano insuficiente: 121x60
+[FAIL] WD-40                    : logo DOM invalido: heuristica de logo no superada
+[OK]   GT Radial                 -> site.png
+[FAIL] Laufenn                  : not well-formed (invalid token): line 53, column 48
+[FAIL] Kenda Tires              : No se encontro un logo en el DOM con las heuristicas definidas.
+[FAIL] Hino                     : HTTPSConnectionPool(host='hino-global.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='hino-global.com', port=443): Failed to resolve 'hino-global.com' ([Errno 8] nodename nor servname provided, or not known)"))
+[FAIL] Isuzu                    : HTTPSConnectionPool(host='isuzu.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)')))
+[FAIL] Daihatsu                 : HTTPSConnectionPool(host='daihatsu.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='daihatsu.com', port=443): Failed to resolve 'daihatsu.com' ([Errno 8] nodename nor servname provided, or not known)"))
+[FAIL] SsangYong                : HTTPSConnectionPool(host='www.hugedomains.com', port=443): Max retries exceeded with url: /domain_profile.cfm?d=ssangyongmotor.com (Caused by NewConnectionError("HTTPSConnection(host='www.hugedomains.com', port=443): Failed to establish a new connection: [Errno 61] Connection refused"))
+[FAIL] Foton                    : No se encontro un logo en el DOM con las heuristicas definidas.
+[FAIL] Chery                    : HTTPSConnectionPool(host='cheryinternational.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='cheryinternational.com', port=443): Failed to resolve 'cheryinternational.com' ([Errno 8] nodename nor servname provided, or not known)"))
+[FAIL] Great Wall Motors        : No connection adapters were found for "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20371%20130'%3E%3C/svg%3E"
+[OK]   JAC Motors                -> site.png
+[FAIL] DieHard                  : not well-formed (invalid token): line 32, column 78
+[FAIL] Hastings                 : HTTPSConnectionPool(host='hastingsfilters.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<HTTPSConnection(host='hastingsfilters.com', port=443) at 0x2cfa83c50>, 'Connection to hastingsfilters.com timed out. (connect timeout=20)'))
+
+Done: 6 ok, 16 failed
+[1m[7m%[27m[1m[0m                                                                                ]633;D;0]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  python /tmp/fetch_missing_lo [Kggos.py[?2004l
+]633;E; python /tmp/fetch_missing_logos.py;]633;C[FAIL] Pennzoil                 : No se encontro un logo en el DOM con las heuristicas definidas.
+[FAIL] Royal Purple             : No se encontro un logo en el DOM con las heuristicas definidas.
+[OK]   Meguiar's                 -> site.png
+[OK]   Permatex                  -> site.png
+[FAIL] WD-40                    : logo DOM invalido: heuristica de logo no superada
+[FAIL] Laufenn                  : not well-formed (invalid token): line 53, column 48
+[FAIL] Kenda Tires              : No se encontro un logo en el DOM con las heuristicas definidas.
+[OK]   Hino                      -> site.png
+[FAIL] Isuzu                    : logo DOM invalido: tamano insuficiente: 157x28
+[FAIL] Daihatsu                 : No se encontro un logo en el DOM con las heuristicas definidas.
+[FAIL] SsangYong                : HTTPSConnectionPool(host='www.ssangyong.co.uk', port=443): Max retries exceeded with url: 
+[FAIL] Foton                    : No se encontro un logo en el DOM con las heuristicas definidas.
+[FAIL] Chery                    : No se encontro un logo en el DOM con las heuristicas definidas.
+[FAIL] Great Wall Motors        : HTTPSConnectionPool(host='media.gwm.com', port=443): Max retries exceeded with url: / (Cau
+[OK]   DieHard                   -> site.png
+[FAIL] Hastings                 : HTTPSConnectionPool(host='www.hastingsmfg.com', port=443): Max retries exceeded with url: 
+[FAIL] BG Products              : 403 Client Error: Forbidden for url: https://bgprod.com/
+[FAIL] Deestone                 : 503 Server Error: Service Temporarily Unavailable for url: https://www.deestone.com/
+[FAIL] Otani                    : HTTPSConnectionPool(host='www.otanityres.com.au', port=443): Max retries exceeded with url
+[FAIL] Deka Batteries           : No se encontro un logo en el DOM con las heuristicas definidas.
+[FAIL] Trojan Battery           : No se encontro un logo en el DOM con las heuristicas definidas.
+[FAIL] National                 : HTTPSConnectionPool(host='www.nationalpartswhse.com', port=443): Max retries exceeded with
+
+Done: 4 ok, 18 failed
+[1m[7m%[27m[1m[0m                                                                                ]633;D;0]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  python /tmp/fetch_missing_lo [Kggos.py[?2004l
+]633;E; python /tmp/fetch_missing_logos.py;]633;C[OK]   Isuzu                     -> site.png
+[FAIL] Pennzoil                 : No se encontro un logo en el DOM con las heuristicas definidas.
+[OK]   Royal Purple              -> site.png
+[FAIL] WD-40                    : No se encontro un logo en el DOM con las heuristicas definidas.
+[FAIL] Kenda Tires              : No se encontro un logo en el DOM con las heuristicas definidas.
+[FAIL] Daihatsu                 : No se encontro un logo en el DOM con las heuristicas definidas.
+[FAIL] SsangYong                : No se encontro un logo en el DOM con las heuristicas definidas.
+[FAIL] Foton                    : No se encontro un logo en el DOM con las heuristicas definidas.
+[OK]   Chery                     -> site.png
+[OK]   Great Wall Motors         -> site.png
+[FAIL] Hastings                 : No se encontro un logo en el DOM con las heuristicas definidas.
+[FAIL] BG Products              : 403 Client Error: Forbidden for url: https://www.bgprod.com/
+[FAIL] Deestone                 : 503 Server Error: Service Temporarily Unavailable for url: https://www.deestone.com/
+[OK]   Deka Batteries            -> site.png
+[FAIL] Trojan Battery           : No se encontro un logo en el DOM con las heuristicas definidas.
+[FAIL] National                 : HTTPSConnectionPool(host='national-seals.com', port=443): Max retries exceeded with url: / (Caused b
+[FAIL] Laufenn                  : No se encontro un logo en el DOM con las heuristicas definidas.
+
+Done: 5 ok, 12 failed
+[1m[7m%[27m[1m[0m                                                                                ]633;D;0]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  python tools/process_logos.p [Kyy --force > /tmp/process3.log 2>&1 && tail -3 /tmp/process3.log[?2004l
+]633;E; python tools/process_logos.py --force > /tmp/process3.log 2>&1 && tail -3 /tmp/process3.log;]633;C^C
+[1m[7m%[27m[1m[0m                                                                                ]633;D;130 tail -5 /tmp/process3.log
+]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  tail -5 /tmp/process3.log[?2004l
+]633;E; tail -5 /tmp/process3.log;]633;C    im = im.resize(size, resample, box)
+  File "/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset/.venv/lib/python3.13/site-packages/PIL/Image.py", line 2323, in resize
+    return self._new(self.im.resize(size, resample, box))
+                     ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[1m[7m%[27m[1m[0m                                                                                ]633;D;0]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  grep "Done:" /tmp/process3.l [Koog[?2004l
+]633;E; grep "Done:" /tmp/process3.log;]633;C[1m[7m%[27m[1m[0m                                                                                ]633;D;1]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  ps aux | grep process_logos  [K|| grep -v grep | head -2[?2004l
+]633;E; ps aux | grep process_logos | grep -v grep | head -2;]633;C[1m[7m%[27m[1m[0m                                                                                ]633;D;0]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  python tools/process_logos.p [Kyy --force 2>&1 | grep -E "(Done:|error|skip)" | tail -5[?2004l
+]633;E; python tools/process_logos.py --force 2>&1 | grep -E "(Done:|error|skip)" | tail -5;]633;CDone: 893 processed, 5 skipped (already up-to-date or no source)
+[1m[7m%[27m[1m[0m                                                                                ]633;D;0]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  python -c "[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004hffrom PIL import Image[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004hiimport os[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004hffor variant, min_dim in [('original', 400), ('optimized', 50), ('thumb', [K  20)]:[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h     logos_dir = f'logos/{variant}'[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h     under = [][?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h     total = 0[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h     for f in os.listdir(logos_dir):[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h         if not f.endswith('.png') or f == '.gitkeep': continue[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h         total += 1[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h         try:[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h             img = Image.open(f'{logos_dir}/{f}')[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h             w, h = img.size[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h             if min(w, h) < min_dim:[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h                 under.append((f, w, h))[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h         except: pass[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h     print(f'{variant}: {total} logos, {len(under)} below {min_dim}x{min_ [Kddim}')[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h     for n, w, h in under[:5]:[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h         print(f'  {n}: {w}x{h}')[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h## Also show a few new Guatemala brands[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004hpprint()[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004hffor slug in ['hino', 'isuzu', 'repsol', 'gt-radial', 'meguiar-s', 'total [K--energies', 'chery', 'great-wall-motors']:[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h     found = any(os.path.exists(f'logos/{v}/{slug}.png') for v in ['origi [Knnal','optimized','thumb'])[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h     if found:[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h         img = Image.open(f'logos/original/{slug}.png')[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h         print(f'{slug}: original {img.size}')[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h     else:[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h  from PIL imt(import os[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004h[?2004l
+[0m[27m[24m[J]633;Fdquote> ]633;G[K[?2004hffor varia"[?2004l
+]633;E; python -c "\x0afrom PIL import Image\x0aimport os\x0a\x0afor variant, min_dim in [('original', 400), ('optimized', 50), ('thumb', 20)]:\x0a    logos_dir = f'logos/{variant}'\x0a    under = []\x0a    total = 0\x0a    for f in os.listdir(logos_dir):\x0a        if not f.endswith('.png') or f == '.gitkeep': continue\x0a        total += 1\x0a        try:\x0a            img = Image.open(f'{logos_dir}/{f}')\x0a            w, h = img.size\x0a            if min(w, h) < min_dim:\x0a                under.append((f, w, h))\x0a        except: pass\x0a    print(f'{variant}: {total} logos, {len(under)} below {min_dim}x{min_dim}')\x0a    for n, w, h in under[:5]:\x0a        print(f'  {n}: {w}x{h}')\x0a\x0a# Also show a few new Guatemala brands\x0aprint()\x0afor slug in ['hino', 'isuzu', 'repsol', 'gt-radial', 'meguiar-s', 'total-energies', 'chery', 'great-wall-motors']:\x0a    found = any(os.path.exists(f'logos/{v}/{slug}.png') for v in ['original','optimized','thumb'])\x0a    if found:\x0a        img = Image.open(f'logos/original/{slug}.png')\x0a        print(f'{slug}: original {img.size}')\x0a    else:\x0a from PIL imt(import os\x0a\x0afor varia";]633;C  File [35m"<string>"[0m, line [35m30[0m
+    from PIL imt(import os[1;31m[0m
+                          [1;31m^[0m
+[1;35mIndentationError[0m: [35munindent does not match any outer indentation level[0m
+[1m[7m%[27m[1m[0m                                                                                ]633;D;1]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  python /tmp/quality_check.py [K[K[?2004l
+]633;E; python /tmp/quality_check.py;]633;Coriginal: 893 logos, 2 below 400x400
+  eec.png: 820x399
+  trucktechnic.png: 824x399
+optimized: 893 logos, 20 below 50x50
+  led-martin.png: 400x46
+  voltmaster.png: 400x44
+  jc-premium.png: 400x34
+  glohh.png: 400x49
+  denckermann.png: 400x36
+thumb: 893 logos, 129 below 20x20
+  mertz.png: 100x19
+  jac-motors.png: 100x17
+  intfradis.png: 100x17
+  pozgum.png: 100x17
+  renault.png: 100x16
+
+hino                        : (2042, 400)
+isuzu                       : (2242, 400)
+repsol                      : (1706, 400)
+gt-radial                   : (2694, 400)
+meguiar-s                   : (600, 400)
+total-energies              : (547, 400)
+chery                       : (4357, 400)
+great-wall-motors           : (1491, 400)
+turtle-wax                  : (441, 400)
+lucas-oil                   : (2211, 400)
+permatex                    : (806, 400)
+diehard                     : (2048, 400)
+royal-purple                : (1374, 400)
+jac-motors                  : (2364, 400)
+deka-batteries              : (553, 400)
+[1m[7m%[27m[1m[0m                                                                                ]633;D;0]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  python tools/process_logos.p [Kyy --slug eec --force && python tools/process_logos.py --slug trucktechnic --forc [Kee && python -c "[?2004l
+[0m[27m[24m[J]633;Fcmdand cmdand dquote> ]633;G[K[?2004hffrom PIL import Image[?2004l
+[0m[27m[24m[J]633;Fcmdand cmdand dquote> ]633;G[K[?2004hffor s in ['eec','trucktechnic']:[?2004l
+[0m[27m[24m[J]633;Fcmdand cmdand dquote> ]633;G[K[?2004h     img = Image.open(f'logos/original/{s}.png')[?2004l
+[0m[27m[24m[J]633;Fcmdand cmdand dquote> ]633;G[K[?2004h     print(f'{s}: {img.size}')[?2004l
+[0m[27m[24m[J]633;Fcmdand cmdand dquote> ]633;G[K[?2004h"[?2004l
+]633;E; python tools/process_logos.py --slug eec --force && python tools/process_logos.py --slug trucktechnic --force && python -c "\x0afrom PIL import Image\x0afor s in ['eec','trucktechnic']:\x0a    img = Image.open(f'logos/original/{s}.png')\x0a    print(f'{s}: {img.size}')\x0a";]633;C  ✓  eec
+
+Done: 1 processed, 0 skipped (already up-to-date or no source)
+  ✓  trucktechnic
+
+Done: 1 processed, 0 skipped (already up-to-date or no source)
+eec: (821, 400)
+trucktechnic: (825, 400)
+[1m[7m%[27m[1m[0m                                                                                ]633;D;0]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  python /tmp/quality_check.py [K  2>&1 | head -5[?2004l
+]633;E; python /tmp/quality_check.py 2>&1 | head -5;]633;Coriginal: 893 logos, 0 below 400x400
+optimized: 893 logos, 20 below 50x50
+  led-martin.png: 400x46
+  voltmaster.png: 400x44
+  jc-premium.png: 400x34
+[1m[7m%[27m[1m[0m                                                                                ]633;D;0]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h  python tools/count.py 2>/dev [K//null || echo "count.py script"; python tools/generate_data.py 2>/dev/null | tai [Kll -3 || echo "generate_data.py done"[?2004l
+]633;E; python tools/count.py 2>/dev/null || echo "count.py script"\x3b python tools/generate_data.py 2>/dev/null | tail -3 || echo "generate_data.py done";]633;C3f-quality: 1
+3k: 1
+3m: 1
+3rg: 1
+4-ride: 1
+4max: 1
+555: 1
+7-seven-parts: 1
+a-b-s: 1
+a-fyreco: 1
+abakus: 1
+abe: 1
+ac-rolcar: 1
+acauto: 1
+ackoja: 1
+ad-k-hner: 1
+adl-blueprint: 1
+adriauto: 1
+ae: 1
+ae-toplight: 1
+aem: 1
+afam: 1
+ag-automotive: 1
+agc: 1
+ahe: 1
+ahg: 1
+aic: 1
+airstal: 1
+airtex: 1
+aisin: 1
+ajusa: 1
+akrapovic: 1
+akrybius: 1
+aks-dasis: 1
+akusan: 1
+al-ko: 1
+alanko: 1
+alco-filter: 1
+alex-lpg: 1
+alfa-e-parts: 1
+alfa-romeo: 1
+alkar: 1
+all-balls-racing: 1
+alligator: 1
+alp-gieg: 1
+alte-automotive: 1
+alu-sv: 1
+am-gears: 1
+amc: 1
+amh-premium-parts: 1
+amio: 1
+amk-automotive: 1
+amp: 1
+ampro: 1
+ap-xenergy: 1
+apc: 1
+aquaplus: 1
+ariete: 1
+arnott: 1
+arrow: 1
+arrowhead: 1
+as: 1
+as-pl: 1
+asc: 1
+ashika: 1
+aslyx: 1
+asmet: 1
+aspock: 1
+asso: 1
+aster: 1
+at-autoteile-germany: 1
+ate: 1
+athena: 1
+audi: 1
+audura: 1
+auger: 1
+autafastar: 1
+autex: 1
+authera: 1
+autlog: 1
+auto-finesse: 1
+autoelectro: 1
+autofren-seinsa: 1
+autogamma: 1
+autoglym: 1
+autogold: 1
+autokit: 1
+autolite: 1
+automega: 1
+autostyle: 1
+ava-cooling-systems: 1
+avs-autoparts: 1
+axia: 1
+ayd: 1
+b-car: 1
+bando: 1
+banner: 1
+barum: 1
+bbp: 1
+bcr: 1
+be-turbo: 1
+behr-thermot-tronik: 1
+bendix: 1
+beral: 1
+beru: 1
+bf: 1
+bga: 1
+bike-it: 1
+bilstein: 1
+bimecc: 1
+birth: 1
+black-diamond: 1
+blic: 1
+blu: 1
+blue-print: 1
+bluekat: 1
+bm-catalysts: 1
+bogap: 1
+bonrath: 1
+borg-beck: 1
+borgwarner: 1
+borsehung: 1
+bosal: 1
+bosch: 1
+boss-filters: 1
+botto-ricambi: 1
+bpart: 1
+bpw: 1
+br-turbo: 1
+brake-engineering: 0
+braxis: 1
+brc: 1
+brecav: 1
+breck: 1
+brembo: 1
+bremi: 1
+brisk: 1
+bsa-battery: 1
+bsg: 1
+bta: 1
+bts-turbo: 1
+budweg-caliper: 1
+bugatti: 1
+bugiad: 1
+bv-psh: 1
+c4: 1
+caffaro: 1
+calorstat-by-vernet: 1
+campro: 1
+car: 1
+carfume: 1
+carlube: 1
+cartechnic: 1
+casco: 1
+castrol: 1
+castrol-filters: 1
+caterpillar: 1
+cautex: 1
+cdx: 1
+cedam: 1
+cef: 1
+cei: 1
+cemoto: 1
+centauro: 1
+centra: 1
+certools: 1
+cevam: 1
+champion: 1
+chery: 1
+cifam: 1
+citroen-peugeot: 1
+clean-filter: 1
+climtex: 1
+cobra-suspension: 1
+cofle: 1
+cojali: 1
+continental: 1
+contitech: 1
+contitech-air-spring: 1
+coopersfiaam-filters: 1
+corteco: 1
+cos-pel: 1
+cosmoparts: 1
+covind: 1
+cpb: 1
+cqx: 1
+crosland: 1
+cs-germany: 1
+ctr: 1
+cx: 1
+cylinder-works: 1
+czm: 1
+d2p: 1
+daco-germany: 1
+dakatec: 1
+danblock: 1
+daxtone: 1
+dayco: 1
+dba-australia: 1
+deeza: 1
+deka-batteries: 1
+delco-remy: 1
+delphi: 1
+demtech: 1
+denckermann: 1
+denso: 1
+diamax: 1
+did: 1
+diederichs: 1
+diehard: 1
+dinex: 1
+dnj-engine-components: 1
+doga: 1
+dolz: 1
+domino: 1
+donaldson: 1
+dorman: 1
+double-action: 1
+dp-group: 1
+dpa: 1
+dr-motor-automotive: 1
+dri: 1
+dt-spare-parts: 1
+dunlop: 1
+dunlop-airsuspension: 1
+duracell: 0
+durer: 1
+dys: 1
+dze: 1
+e-spek: 1
+eai: 1
+easy-part-france: 1
+eaton: 1
+ebc: 1
+ebc-brakes: 1
+ebersp-cher: 1
+ecs: 1
+edelmann: 1
+eec: 1
+efi-automotive: 1
+eibach: 1
+eicher: 1
+einhell: 1
+einparts: 1
+electric-life: 1
+electrosport: 1
+elkab-2: 1
+elpigaz: 1
+elring: 1
+elstock: 1
+elwis-royal: 1
+emmerre: 1
+empex: 1
+encory: 1
+enduro: 1
+energizer: 1
+engitech: 1
+eps: 1
+equal-quality: 1
+era: 1
+era-benelux: 1
+erich-jaeger: 1
+ernst: 1
+ert: 1
+esen-skv: 1
+esjot: 1
+et-engineteam: 1
+eurodriveline: 1
+europegas: 1
+euroricambi: 1
+eurotec: 1
+evoron: 1
+example-brand: 2
+exedy: 1
+exide: 1
+fa-krosno: 1
+fa1: 1
+facar: 1
+facet: 1
+fae: 1
+fag: 1
+fagumit: 1
+fai: 1
+fai-autoparts: 1
+fare-sa: 1
+fast: 1
+faurecia: 1
+febest: 1
+febi-bilstein: 1
+ferodo: 1
+ferodo-racing: 1
+fersa-bearings: 1
+fiamm: 1
+fiat: 1
+fic: 1
+filtron: 1
+finao-autoparts: 1
+fispa: 1
+fleetguard: 1
+flennor: 1
+florimex: 1
+fomar-friction: 1
+fortune-line: 1
+fox: 1
+fram: 1
+france-xenon: 1
+frankberg: 1
+frap: 1
+freccia: 1
+fremax: 1
+frenkit: 1
+frielitz: 1
+frigair: 1
+fte: 1
+fuel-star: 1
+gabriel: 1
+garrett: 1
+gates: 1
+gazoobike: 1
+geba: 1
+gebe: 1
+geiwiz: 1
+general-ricambi: 1
+generic: 1
+gh: 1
+giant: 1
+gieffe: 1
+gk: 1
+glaser: 1
+glavista: 1
+glohh: 1
+glyco: 1
+gmb: 1
+gocore: 1
+goetze: 1
+goetze-engine: 1
+gomet: 1
+goom: 1
+gpr: 1
+graf: 1
+great-wall-motors: 1
+green: 1
+gsp: 1
+gt-bergmann: 1
+gt-radial: 1
+guarnitauto: 1
+h-r: 1
+hajus-autoteile: 1
+haldex: 1
+hamaton: 1
+hankook: 1
+hardrace: 1
+hastings-piston-ring: 1
+hc-cargo: 1
+hella: 1
+hella-gutmann: 1
+hengst-filter: 1
+henkel-parts: 1
+hepu: 1
+herth-buss-elparts: 1
+herth-buss-jakoparts: 1
+hi-q: 1
+hi-q-tools: 1
+hidria: 1
+hiflofiltro: 1
+high-car: 1
+hino: 1
+hitachi: 1
+hjs: 1
+hoffcar: 1
+hoffer: 1
+holset: 1
+horpol: 1
+hortum: 1
+hot-cams: 1
+hot-rods: 1
+hs: 1
+huf: 1
+hutchinson: 1
+hyundai: 1
+iap-quality-parts: 1
+ibras: 1
+icer: 1
+ijs-group: 1
+imasaf: 1
+ina: 1
+ingremio: 1
+innteck: 1
+inparts: 1
+intermotor: 1
+intervalves: 1
+intfradis: 1
+iparlux: 1
+ipd: 1
+ipsa: 1
+isam: 1
+isuzu: 1
+iveco: 1
+iwis-motorsysteme: 1
+izawit: 1
+izi: 1
+jac-motors: 1
+jaeger: 1
+jaguar: 1
+janmor: 1
+japanparts: 1
+japko: 1
+jc-premium: 1
+jmj: 1
+johns: 1
+jom: 1
+jost: 1
+jotate: 1
+jp-group: 1
+jpn: 1
+jrone: 1
+js-asakashi: 1
+jtsprockets: 1
+juice-technology: 0
+jumasa: 1
+junior-gas-spring: 1
+jurid: 1
+k-k: 1
+k-n-filters: 1
+kale-oto-radyator: 1
+kamar: 1
+kamoka: 1
+kanaco: 1
+karcher: 1
+kavo-parts: 1
+kawe: 1
+keyskar: 1
+keyster: 1
+kielder: 1
+kilen: 1
+klarius: 1
+klaxcar-france: 1
+klemax: 1
+klokkerholm: 1
+kme: 1
+knecht: 1
+knorr-bremse: 1
+kolbenschmidt: 1
+koni: 1
+koyorad: 1
+kraft: 1
+krawehl: 1
+krios: 1
+ks-tools: 1
+ksh-europe: 1
+kw: 1
+kwp: 1
+kyb: 1
+l-bro: 1
+lamiro: 1
+lamperti: 1
+land-rover: 1
+landi-renzo: 1
+landport-batteries: 1
+langzeit-batterien: 1
+lauber: 1
+laufenn: 0
+lcc: 1
+leaders-specialist-components: 1
+led-martin: 1
+lema: 1
+lemf-rder: 1
+lemforder: 1
+leoch: 1
+leovince: 1
+lesj-fors: 1
+lift-tek: 1
+lightech: 1
+linex: 1
+lion: 1
+lizarte: 1
+lls-germany: 1
+lovato: 1
+lpgtech: 1
+lpr: 1
+lrt: 1
+ltd: 1
+lucas: 1
+lucas-oil: 1
+luk: 1
+lumag: 1
+m-modecar: 1
+mad: 1
+magneti-marelli: 1
+magnum-technology: 1
+mahle: 1
+maintenance-kits: 1
+mal: 1
+mando: 1
+mann-filter: 1
+mapco: 1
+maserati: 1
+master-sport: 1
+maurice-lecoy: 1
+max: 1
+maxell: 1
+maxgear: 1
+mcs: 1
+mdr: 1
+mecarm: 1
+meguiar-s: 1
+meguiars: 1
+meha-automotive: 1
+mei: 1
+mekra: 1
+meritor: 1
+mertz: 1
+messmer: 1
+metalcaucho: 1
+metelli: 1
+metzger: 1
+meyer-motoren: 1
+meyle: 1
+mga: 1
+mi-r-a: 1
+michelin-wipers: 1
+miesslerautomotive: 1
+milwaukee: 1
+mini: 1
+mintex: 1
+miraglio: 1
+misfat: 1
+mitsuba: 1
+miw-filters: 1
+mobil: 1
+mobiletron: 1
+monedero: 1
+monroe: 1
+montcada: 1
+moog: 1
+motair: 1
+motaquip: 1
+motgum: 1
+motive: 1
+moto-press: 1
+motoforce: 1
+motorad: 1
+mototechnika: 1
+mpbs: 1
+mraz-europe: 1
+mte-thomson: 1
+mtm: 1
+mts: 1
+muller-filter: 1
+n-ral: 1
+nap-carparts: 1
+naraku: 1
+narva: 1
+navitel: 1
+ne: 1
+neolux: 1
+neotec: 1
+new-age: 1
+nexcom: 1
+nextbase: 1
+nexus: 1
+ng: 1
+ngk: 1
+nhc: 1
+nibk: 1
+nifea: 1
+nipparts: 1
+nissens: 1
+nk: 1
+norma: 1
+normfest: 1
+nrf: 1
+nsk: 1
+ntk: 1
+nty: 1
+nwb: 1
+oberland: 1
+ocap: 1
+odm-multiparts: 1
+oe-germany: 1
+okyami: 1
+olsa: 1
+omg-srl: 1
+ooono: 1
+opel: 1
+optibelt: 1
+optima: 1
+optimal: 1
+origen: 1
+original-imperium: 1
+osram: 1
+ossca: 1
+osvat: 1
+oxford: 1
+oximo: 1
+oyodo: 1
+pacol: 1
+pagid: 1
+partstec: 1
+pascal: 1
+payen: 1
+pedol: 1
+pemebla: 1
+permatex: 1
+peters-ennepetal: 1
+peugeot: 1
+pex: 1
+philips: 1
+phoenix: 1
+pierburg: 1
+pika: 1
+pilkington: 1
+pioneer: 1
+pipercross: 1
+pivot-works: 1
+planet-tech: 1
+pma: 1
+pmm: 1
+pneumatics: 1
+point-gear: 1
+polini: 1
+polisport: 1
+polmo: 1
+polmo-s-a: 1
+polo: 1
+polstarter: 1
+power-truck: 1
+poweredge: 1
+powerflex: 1
+powermax: 1
+pozgum: 1
+prasco: 1
+prestolite-electric: 1
+prexaparts: 1
+prime-turbo: 1
+prins: 1
+proakcess: 1
+procaro: 1
+profit: 1
+profix-germany: 1
+prokom: 1
+proplast: 1
+protechnic: 1
+provia: 1
+prox-racing-parts: 1
+psa: 1
+purflux: 1
+purro: 1
+pzl-filters: 1
+q-batteries: 1
+quantum-energy: 1
+quaro: 1
+quick-brake: 1
+quinton-hazell: 1
+racimex: 1
+racingbike: 1
+raicam: 1
+rap-brakes: 1
+rapro: 1
+rdmoto: 1
+re-part: 1
+recambo: 1
+recaro: 1
+record-france: 1
+red-line: 1
+redfair: 1
+reinhoch: 1
+reinz: 1
+remsa: 1
+remus: 1
+renault: 1
+repiauto: 1
+repro-auto: 1
+repsol: 1
+restagraf: 1
+ricambiflex-gm: 1
+ridex: 1
+ridex-plus: 1
+ridex-reman: 1
+ring-auto: 1
+rivolv: 1
+rizoma: 1
+rk: 1
+rk-tronic: 1
+rms: 1
+roadhouse: 1
+rocatron: 1
+rocket: 1
+roll: 1
+romix: 1
+rotinger: 1
+rotovis-automotive-electrics: 1
+royal-purple: 1
+rtc-technicturbocharger: 1
+rts: 1
+rud: 1
+ruffwear: 1
+rundutec: 1
+ruville: 1
+rymec: 1
+rywal: 1
+s-tec: 1
+s-tr: 1
+sabelt: 1
+sachs: 1
+sachs-performance: 1
+saf: 1
+saint-gobain: 1
+sakura: 1
+saleri-sil: 1
+samko: 1
+sampa: 1
+sanden: 1
+sando: 1
+sasic: 1
+sbp: 1
+sbs: 1
+scc-fahrzeugtechnik: 1
+schaeffler-vitesco: 1
+schl-tter-turbolader: 1
+schlieckmann: 1
+schrader: 1
+scottoiler: 1
+sealey: 1
+sebro: 1
+seg-automotive: 1
+seim: 1
+sencom: 1
+sera: 1
+sercore: 1
+servotec: 1
+sf-filter: 1
+sgr: 1
+shaftec: 1
+shell: 1
+shido: 1
+shw-performance: 1
+sidat: 1
+sidem: 1
+siegel-automotive: 1
+sigam: 1
+sip: 1
+skf: 1
+sky-battery: 1
+skyrich: 1
+snr: 1
+snra: 1
+sofima: 1
+sogefipro: 1
+sollo: 1
+spahn-gl-hlampen: 1
+speed: 1
+spidan: 1
+spidan-chassis-parts: 1
+spilu: 1
+spj: 1
+srline: 1
+stabilus: 1
+stage6: 1
+stardax: 1
+stark: 1
+starline: 1
+starq: 1
+statim: 1
+stc: 1
+step-filters: 1
+stoptech: 1
+storm-quality-parts: 1
+stp: 1
+strongflex: 1
+stsuspensions: 1
+sun: 1
+sunair: 1
+sunstar: 1
+superlite: 1
+suplex: 1
+suzuki: 1
+swag: 1
+swf: 1
+tab: 1
+talosa: 1
+tcci: 1
+tcmatic: 1
+teamec: 1
+tech: 1
+tecnocar: 1
+tecpo: 1
+tedgum: 1
+teikin: 1
+teknorot: 1
+tencar: 1
+tes: 1
+tesla: 1
+tesla-technics: 1
+textar: 1
+the-newline: 1
+thermotec: 1
+tiptop: 1
+titan: 1
+tlt-motor: 1
+tokico: 1
+tomasetto: 1
+tomex-brakes: 1
+topran: 1
+total-energies: 1
+tourmax: 1
+trakmotive: 1
+transmech: 1
+treezer: 1
+triclo: 1
+trico: 1
+triple-qx: 1
+triscan: 1
+tru-components: 1
+truck-center: 1
+trucklight: 1
+truckline: 1
+trucktec-automotive: 1
+trucktechnic: 1
+trusting: 1
+trw: 1
+trw-engine-component: 1
+tudor: 1
+tungsram: 1
+turbo-motor: 1
+turbo-s-hoet: 1
+turbo-tec: 1
+turboparts: 1
+turborail: 1
+turbos-europe: 1
+turtle-wax: 1
+turtlewax: 1
+tyc: 1
+ufi: 1
+ulo: 1
+ulter-sport: 1
+ultra: 1
+ultra-racing: 1
+unigom: 1
+unipoint: 1
+univcar: 1
+vaden: 1
+vaico: 1
+valeo: 1
+valtek: 1
+valvoline: 1
+van-wezel: 1
+vanstar: 1
+varta: 1
+vdo: 1
+vegaz: 1
+vema: 1
+vemo: 1
+veneporte: 1
+vicma: 1
+vignal: 1
+vika: 1
+visee: 1
+vital-suspensions: 1
+vitale: 1
+vitesco-technologies: 1
+vmf: 1
+voller-filters: 1
+voltmaster: 1
+volvo: 1
+wabco: 1
+waeco: 1
+wagner: 1
+wahler: 1
+wai: 1
+walker: 1
+walker-products: 1
+was: 1
+wat: 1
+wd-40: 0
+webasto: 1
+westfalia: 1
+winderosa: 1
+witter: 1
+wix-filters: 1
+wonder: 1
+wuzetem: 1
+wynns: 1
+xenled: 1
+yamato: 1
+yazuka: 1
+ysparts: 1
+yss: 1
+yuasa: 1
+zaffo: 1
+zap-technix: 1
+zekkert: 1
+zeta-erre: 1
+zf-getriebe: 1
+zf-lenksysteme: 1
+zf-parts: 1
+zimmermann: 1
+zzvf: 1
+    }
+  }
+]
+[1m[7m%[27m[1m[0m                                                                                ]633;D;0]633;P;Cwd=/Users/juantanchez/Documents/GitHub/car-brands-logos-dataset]633;EnvSingleStart;0;;]633;EnvSingleEnd;;[0m[27m[24m[J]633;Ajuantanchez@mbp-de-juan car-brands-logos-dataset % ]633;B[K[?2004h

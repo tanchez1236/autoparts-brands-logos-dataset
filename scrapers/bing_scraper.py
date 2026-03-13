@@ -36,6 +36,9 @@ def search_bing_images(
             "offset": offset,
             "safeSearch": "Off",
             "imageType": "Transparent",
+            # Request only images with sufficient resolution for a high-quality original
+            "minWidth": 300,
+            "minHeight": 300,
         }
         response = session.get(endpoint, headers=headers, params=params, timeout=30)
         response.raise_for_status()

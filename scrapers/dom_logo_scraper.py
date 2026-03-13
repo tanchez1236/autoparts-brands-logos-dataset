@@ -69,7 +69,13 @@ def save_inline_svg(svg_markup: str, dataset_dir: str | Path, brand: str) -> Pat
     return target_path
 
 
-def download_dom_logo(domain: str, brand: str, dataset_dir: str | Path, timeout: int = 30) -> Path:
+def download_dom_logo(
+    domain: str,
+    brand: str,
+    dataset_dir: str | Path,
+    timeout: int = 30,
+    min_size: tuple[int, int] = (32, 32),
+) -> Path:
     normalized_domain = normalize_domain(domain)
     headers = {
         "User-Agent": "Mozilla/5.0 (compatible; brands-logos-dataset/1.0; +https://github.com/)"
@@ -92,7 +98,7 @@ def download_dom_logo(domain: str, brand: str, dataset_dir: str | Path, timeout:
     image_response.raise_for_status()
     extension = Path(absolute_url).suffix.lower() or ".png"
     png_bytes = normalize_image_bytes(image_response.content, source_extension=extension)
-    is_valid, errors = validate_image_bytes(png_bytes, allowed_formats={"PNG"})
+    is_valid, errors = validate_image_bytes(png_bytes, min_size=min_size, allowed_formats={"PNG"})
     if not is_valid:
         raise ValueError(f"logo DOM invalido: {', '.join(errors)}")
 

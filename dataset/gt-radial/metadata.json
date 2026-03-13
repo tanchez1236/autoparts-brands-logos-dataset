@@ -1,8 +1,9 @@
 {
   "brand": "gt-radial",
   "name": "GT Radial",
-  "count": 1,
+  "count": 2,
   "sources": [
-    "dom"
+    "dom",
+    "wikimedia"
   ]
 }

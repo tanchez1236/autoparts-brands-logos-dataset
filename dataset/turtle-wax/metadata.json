@@ -1,8 +1,9 @@
 {
   "brand": "turtle-wax",
   "name": "Turtle Wax",
-  "count": 1,
+  "count": 2,
   "sources": [
-    "dom"
+    "dom",
+    "wikimedia"
   ]
 }

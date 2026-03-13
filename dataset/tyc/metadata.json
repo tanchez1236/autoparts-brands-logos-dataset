@@ -3,6 +3,7 @@
   "name": "TYC",
   "count": 1,
   "sources": [
-    "autodoc"
+    "autodoc",
+    "wikimedia"
   ]
 }

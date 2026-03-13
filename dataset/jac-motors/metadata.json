@@ -1,8 +1,9 @@
 {
   "brand": "jac-motors",
   "name": "JAC Motors",
-  "count": 1,
+  "count": 2,
   "sources": [
-    "dom"
+    "dom",
+    "wikimedia"
   ]
 }

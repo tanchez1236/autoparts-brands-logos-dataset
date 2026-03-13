@@ -3,6 +3,7 @@
   "name": "EIBACH",
   "count": 1,
   "sources": [
-    "autodoc"
+    "autodoc",
+    "wikimedia"
   ]
 }

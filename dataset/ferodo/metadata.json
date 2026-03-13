@@ -3,6 +3,7 @@
   "name": "FERODO",
   "count": 1,
   "sources": [
-    "autodoc"
+    "autodoc",
+    "wikimedia"
   ]
 }

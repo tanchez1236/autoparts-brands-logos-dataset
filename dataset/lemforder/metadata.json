@@ -3,6 +3,7 @@
   "name": "Lemforder",
   "count": 1,
   "sources": [
-    "eurocarparts"
+    "eurocarparts",
+    "wikimedia"
   ]
 }

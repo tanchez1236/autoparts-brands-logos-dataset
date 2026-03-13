@@ -1,8 +1,9 @@
 {
   "brand": "total-energies",
   "name": "Total Energies",
-  "count": 1,
+  "count": 2,
   "sources": [
-    "dom"
+    "dom",
+    "wikimedia"
   ]
 }

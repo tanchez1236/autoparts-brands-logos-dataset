@@ -1,8 +1,9 @@
 {
   "brand": "repsol",
   "name": "Repsol",
-  "count": 1,
+  "count": 2,
   "sources": [
-    "dom"
+    "dom",
+    "wikimedia"
   ]
 }

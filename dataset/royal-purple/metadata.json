@@ -1,8 +1,9 @@
 {
   "brand": "royal-purple",
   "name": "Royal Purple",
-  "count": 1,
+  "count": 2,
   "sources": [
-    "dom"
+    "dom",
+    "wikimedia"
   ]
 }

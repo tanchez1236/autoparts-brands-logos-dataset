@@ -1,9 +1,10 @@
 {
   "brand": "wagner",
-  "name": "WAGNER",
+  "name": "wagner",
   "count": 1,
   "sources": [
     "autodoc",
+    "manual",
     "wikimedia"
   ]
 }

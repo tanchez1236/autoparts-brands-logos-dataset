@@ -1,11 +1,12 @@
 {
   "brand": "bosch",
-  "name": "BOSCH",
+  "name": "bosch",
   "count": 1,
   "sources": [
     "autodoc",
     "eurocarparts",
     "logodix",
+    "manual",
     "wikimedia"
   ]
 }

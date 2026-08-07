@@ -173,6 +173,10 @@ python tools/count.py --dataset-dir dataset --sync-metadata
 # Verify each brand has at least one valid image
 python tools/verify.py --brands-file brands-list.txt --dataset-dir dataset
 
+# Add or update a brand logo
+python tools/manage_logos.py --action add --brand "Bosch" --logo /path/to/logo.png --generate-data
+python tools/manage_logos.py --action update --brand "Bosch" --logo /path/to/new-logo.png --generate-data
+
 # Remove near-duplicates using perceptual hashing
 python tools/dedupe.py --dataset-dir dataset --threshold 4
 ```

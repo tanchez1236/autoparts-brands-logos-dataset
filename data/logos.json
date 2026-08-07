@@ -7929,6 +7929,15 @@
     }
   },
   {
+    "name": "Seiken",
+    "slug": "seiken",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/seiken.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/seiken.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/seiken.png"
+    }
+  },
+  {
     "name": "SEIM",
     "slug": "seim",
     "image": {

@@ -6534,6 +6534,15 @@
     }
   },
   {
+    "name": "Parker",
+    "slug": "parker",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/parker.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/parker.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/parker.png"
+    }
+  },
+  {
     "name": "PartsTec",
     "slug": "partstec",
     "image": {

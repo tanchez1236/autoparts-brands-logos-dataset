@@ -23,6 +23,7 @@ ATE
 Austone
 Autolite
 Autometer
+Autox
 Baldwin Filters
 Bando
 Bar's Leaks

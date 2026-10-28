@@ -63,6 +63,7 @@ autoparts-brands-logos-dataset/
     │   ├── app.py
     │   ├── templates/index.html
     │   └── static/
+    ├── trim_logos.py         # recorta los márgenes de los logos existentes
     ├── count.py
     ├── dedupe.py
     └── verify.py
@@ -112,6 +113,22 @@ Cada cambio mantiene sincronizadas todas las capas del dataset:
 `dataset/<slug>/logo.png`, `logos/{original,optimized,thumb}/<slug>.png`,
 `brands-list.txt` y `data/logos.json`. Después solo queda revisar y subir los
 cambios con git.
+
+## Recortar los logos existentes
+
+El gestor recorta el margen automáticamente al subir una imagen. Para aplicar el
+mismo recorte a los logos que ya están en el dataset:
+
+```bash
+python tools/trim_logos.py --dry-run    # ver qué cambiaría, sin escribir nada
+python tools/trim_logos.py              # recortar y republicar logos/ + logos.json
+python tools/trim_logos.py --slug bosch # una sola marca
+```
+
+Por defecto solo recorta cuando se elimina al menos un 2 % del área (ajustable con
+`--min-gain 0` para quitar también bordes de 1 px) y nunca aplica un recorte que
+empeore el resultado de `tools/verify.py`. Es idempotente: ejecutarlo de nuevo no
+cambia nada.
 
 ## Legal Notice
 

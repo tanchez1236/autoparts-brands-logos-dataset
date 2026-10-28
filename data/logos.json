@@ -945,6 +945,15 @@
     }
   },
   {
+    "name": "Autox",
+    "slug": "autox",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/autox.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/autox.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/autox.png"
+    }
+  },
+  {
     "name": "AVA COOLING SYSTEMS",
     "slug": "ava-cooling-systems",
     "image": {

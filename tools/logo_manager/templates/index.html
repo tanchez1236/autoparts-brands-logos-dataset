@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestor de logos · Autoparts Brands</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Ctext x='32' y='46' font-family='Arial,Helvetica,sans-serif' font-size='36' font-weight='bold' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="title-block">
+        <h1>Logos de marcas</h1>
+        <p class="summary" id="summary">Cargando…</p>
+      </div>
+
+      <div class="search-block">
+        <svg class="search-icon" viewBox="0 0 20 20" aria-hidden="true">
+          <path d="M9 3a6 6 0 1 0 3.7 10.7l3.3 3.3 1.4-1.4-3.3-3.3A6 6 0 0 0 9 3Zm0 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"/>
+        </svg>
+        <input id="search" type="search" placeholder="Buscar marca… (/)" autocomplete="off" spellcheck="false" aria-label="Buscar marca">
+      </div>
+
+      <div class="toolbar">
+        <button type="button" id="refresh" class="icon-button" title="Recargar listado" aria-label="Recargar listado">↻</button>
+        <div class="size-control" role="group" aria-label="Tamaño de las tarjetas">
+          <button type="button" data-size="small" title="Logos pequeños">S</button>
+          <button type="button" data-size="normal" title="Logos medianos">M</button>
+          <button type="button" data-size="large" title="Logos grandes">L</button>
+        </div>
+        <label class="chip"><input type="checkbox" id="only-missing"> Sin logo</label>
+        <button type="button" id="new-brand" class="primary">+ Nueva marca</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <div id="grid" class="grid" aria-live="polite"></div>
+    <p id="empty-state" class="empty-state" hidden>No hay marcas que coincidan con la búsqueda.</p>
+  </main>
+
+  <!-- Detalle / edición de una marca -->
+  <div class="modal" id="detail-modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="detail-name">
+      <button type="button" class="modal-close" data-close aria-label="Cerrar">×</button>
+      <div class="detail-preview"><img id="detail-img" alt=""></div>
+      <h2 id="detail-name"></h2>
+      <p class="muted" id="detail-slug"></p>
+      <div class="detail-actions">
+        <button type="button" id="detail-replace" class="primary">Cambiar imagen</button>
+        <button type="button" id="detail-remove-logo" class="ghost">Quitar logo</button>
+        <button type="button" id="detail-delete" class="danger">Eliminar marca</button>
+      </div>
+      <input type="file" id="detail-file" accept="image/png,image/jpeg,image/webp,image/gif,image/bmp,image/svg+xml,.svg" hidden>
+    </div>
+  </div>
+
+  <!-- Nueva marca -->
+  <div class="modal" id="create-modal" hidden>
+    <form class="modal-card" id="create-form" role="dialog" aria-modal="true" aria-labelledby="create-title">
+      <button type="button" class="modal-close" data-close aria-label="Cerrar">×</button>
+      <h2 id="create-title">Nueva marca</h2>
+
+      <label class="field">
+        <span>Nombre de la marca</span>
+        <input id="create-name" type="text" placeholder="Ej. Bosch" required autocomplete="off">
+      </label>
+
+      <div class="dropzone" id="create-drop" tabindex="0" role="button">
+        <img id="create-preview" alt="" hidden>
+        <p id="create-hint">Arrastra una imagen aquí<br><span class="muted">o haz clic para seleccionar</span></p>
+      </div>
+      <p class="hint">PNG, JPG, WEBP, GIF o SVG · máx. 8 MB · se ajusta a 1200 px</p>
+      <input type="file" id="create-file" accept="image/png,image/jpeg,image/webp,image/gif,image/bmp,image/svg+xml,.svg" hidden>
+
+      <div class="modal-footer">
+        <button type="button" class="ghost" data-close>Cancelar</button>
+        <button type="submit" class="primary" id="create-submit">Crear marca</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

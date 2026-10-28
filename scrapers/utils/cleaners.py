@@ -10,17 +10,46 @@ try:
 except (ImportError, OSError):  # pragma: no cover
     cairosvg = None
 
+try:
+    from resvg_py import svg_to_bytes as _resvg_svg_to_bytes
+except (ImportError, OSError):  # pragma: no cover
+    _resvg_svg_to_bytes = None
+
 
 # Resolution used when rasterising SVG logos — keeps them crisp at original size
 _SVG_RASTER_WIDTH = 512
 
 
+def _rasterize_svg(raw_bytes: bytes) -> bytes:
+    """Rasterise SVG bytes to PNG using the first available backend.
+
+    cairosvg needs the native Cairo library (present on most Linux/macOS
+    systems, unusual on Windows), so resvg (a self-contained Rust wheel) is
+    used as a fallback.
+    """
+    if cairosvg is not None:
+        return cairosvg.svg2png(bytestring=raw_bytes, output_width=_SVG_RASTER_WIDTH)
+
+    if _resvg_svg_to_bytes is not None:
+        try:
+            png = _resvg_svg_to_bytes(
+                svg_string=raw_bytes.decode("utf-8", "replace"),
+                width=_SVG_RASTER_WIDTH,
+            )
+        except ValueError as exc:
+            raise RuntimeError(f"SVG invalido: {exc}") from exc
+        return bytes(png)
+
+    raise RuntimeError(
+        "No hay backend para convertir SVG a PNG: instala cairosvg o resvg-py "
+        "(pip install resvg-py)"
+    )
+
+
 def _load_image_from_bytes(raw_bytes: bytes, extension: str = "") -> Image.Image:
     if extension.lower() == ".svg":
-        if cairosvg is None:
-            raise RuntimeError("cairosvg es requerido para convertir SVG a PNG")
         # Rasterise at high resolution so the PNG source is always sharp
-        raw_bytes = cairosvg.svg2png(bytestring=raw_bytes, output_width=_SVG_RASTER_WIDTH)
+        raw_bytes = _rasterize_svg(raw_bytes)
     image = Image.open(BytesIO(raw_bytes))
     image.load()
     return image

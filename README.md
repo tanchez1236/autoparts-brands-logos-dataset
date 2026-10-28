@@ -56,10 +56,53 @@ autoparts-brands-logos-dataset/
 └── tools/
     ├── process_logos.py
     ├── generate_data.py
+    ├── manage_logos.py
+    ├── logo_manager/         # gestor web interactivo
+    │   ├── app.py
+    │   ├── templates/index.html
+    │   └── static/
     ├── count.py
     ├── dedupe.py
     └── verify.py
 ```
+
+## Gestor web de logos
+
+Interfaz local para revisar y mantener el dataset sin ejecutar scripts a mano:
+listado con buscador, agregar marcas, reemplazar o quitar el logo de una marca y
+eliminar marcas.
+
+```bash
+pip install -r requirements.txt
+python tools/logo_manager/app.py          # abre http://127.0.0.1:5000
+```
+
+En Windows puedes hacer **doble clic en `logo_manager.bat`**: verifica que haya Python
+3.9+, instala automáticamente lo que falte (Flask, Pillow y requests, más el backend
+para SVG) y abre la aplicación en el navegador. Si el puerto 5000 está
+ocupado: `logo_manager.bat --port 5050`.
+
+Opciones de la app: `--port 5050`, `--host 0.0.0.0` y `--no-browser`.
+
+Qué permite hacer:
+
+- **Buscar** por nombre o slug mientras escribes (atajo `/`).
+- **Cambiar el tamaño** de las tarjetas (S / M / L) para revisar los logos sin
+  esfuerzo; la preferencia se recuerda en el navegador.
+- **Agregar una marca**: nombre + imagen (arrastrar y soltar o seleccionar
+  archivo). Acepta PNG, JPG, WEBP, GIF y SVG; los SVG se convierten a PNG con
+  `cairosvg` o, si no está disponible, con `resvg-py` (el `.bat` lo instala
+  automáticamente).
+- **Reemplazar un logo**: clic en la tarjeta y "Cambiar imagen", o arrastra una
+  imagen directamente sobre la tarjeta.
+- **Quitar el logo** de una marca (la marca se mantiene) o **eliminar la marca**
+  completa.
+- Filtrar las marcas **sin logo**.
+
+Cada cambio mantiene sincronizadas todas las capas del dataset:
+`dataset/<slug>/logo.png`, `logos/{original,optimized,thumb}/<slug>.png`,
+`brands-list.txt` y `data/logos.json`. Después solo queda revisar y subir los
+cambios con git.
 
 ## Legal Notice
 

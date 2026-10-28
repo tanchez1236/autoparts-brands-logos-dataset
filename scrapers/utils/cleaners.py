@@ -3,7 +3,7 @@ from __future__ import annotations
 from io import BytesIO
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, ImageChops, ImageOps
 
 try:
     import cairosvg
@@ -75,17 +75,58 @@ def resize_image(image: Image.Image, size: tuple[int, int] | None = None) -> Ima
     return resized
 
 
+def trim_margins(
+    image: Image.Image,
+    alpha_threshold: int = 10,
+    white_threshold: int = 245,
+    padding: int = 0,
+) -> Image.Image:
+    """Crop the empty border around the logo.
+
+    A pixel counts as "content" only when it is visible (alpha above
+    ``alpha_threshold``) and not white (some RGB channel below
+    ``white_threshold``), so transparent and plain white margins are removed.
+    """
+    rgba = image.convert("RGBA")
+
+    visible = rgba.getchannel("A").point(lambda value: 255 if value > alpha_threshold else 0)
+    inverted = ImageOps.invert(rgba.convert("RGB"))
+    red, green, blue = inverted.split()
+    non_white = ImageChops.lighter(ImageChops.lighter(red, green), blue).point(
+        lambda value: 255 if value > 255 - white_threshold else 0
+    )
+    box = ImageChops.darker(visible, non_white).getbbox()
+    if box is None:
+        return rgba
+
+    left, top, right, bottom = box
+    if padding:
+        left = max(left - padding, 0)
+        top = max(top - padding, 0)
+        right = min(right + padding, rgba.width)
+        bottom = min(bottom + padding, rgba.height)
+
+    if (left, top, right, bottom) == (0, 0, rgba.width, rgba.height):
+        return rgba
+    return rgba.crop((left, top, right, bottom))
+
+
 def normalize_image_bytes(
     raw_bytes: bytes,
     source_extension: str = "",
     target_size: tuple[int, int] | None = None,
     strip_background: bool = False,
+    auto_trim: bool = False,
 ) -> bytes:
     image = _load_image_from_bytes(raw_bytes, extension=source_extension)
     image = image.convert("RGBA")
 
     if strip_background:
         image = remove_background(image)
+
+    if auto_trim:
+        # Se recorta antes de redimensionar para no perder definición
+        image = trim_margins(image)
 
     image = resize_image(image, target_size)
 
@@ -99,6 +140,7 @@ def convert_file_to_png(
     target_path: str | Path | None = None,
     target_size: tuple[int, int] | None = None,
     strip_background: bool = False,
+    auto_trim: bool = False,
 ) -> Path:
     source = Path(image_path)
     destination = Path(target_path) if target_path else source.with_suffix(".png")
@@ -107,6 +149,7 @@ def convert_file_to_png(
         source_extension=source.suffix,
         target_size=target_size,
         strip_background=strip_background,
+        auto_trim=auto_trim,
     )
     destination.write_bytes(png_bytes)
     return destination

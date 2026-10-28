@@ -3,6 +3,7 @@
   "name": "3M",
   "count": 1,
   "sources": [
-    "eurocarparts"
+    "eurocarparts",
+    "manual"
   ]
 }

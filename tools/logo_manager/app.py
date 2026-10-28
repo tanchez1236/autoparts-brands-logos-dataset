@@ -237,7 +237,12 @@ def _save_upload(file_storage, brand_dir: Path) -> None:
         if tmp_path.stat().st_size == 0:
             raise ApiError("El archivo está vacío.")
         try:
-            convert_file_to_png(tmp_path, target_path=brand_dir / "logo.png", target_size=MAX_SOURCE_SIZE)
+            convert_file_to_png(
+                tmp_path,
+                target_path=brand_dir / "logo.png",
+                target_size=MAX_SOURCE_SIZE,
+                auto_trim=True,
+            )
         except RuntimeError as exc:
             raise ApiError(str(exc)) from exc
         except Exception as exc:  # Pillow lanza distintos errores según el formato

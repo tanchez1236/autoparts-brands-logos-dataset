@@ -31,6 +31,8 @@ Each brand is represented as one entry in `data/logos.json`:
 autoparts-brands-logos-dataset/
 ├── brands-list.txt
 ├── requirements.txt
+├── logo_manager.bat        # lanzador de un clic (Windows)
+├── logo_manager.command    # lanzador de un clic (macOS)
 ├── data/
 │   └── logos.json
 ├── logos/
@@ -77,10 +79,14 @@ pip install -r requirements.txt
 python tools/logo_manager/app.py          # abre http://127.0.0.1:5000
 ```
 
-En Windows puedes hacer **doble clic en `logo_manager.bat`**: verifica que haya Python
-3.9+, instala automáticamente lo que falte (Flask, Pillow y requests, más el backend
-para SVG) y abre la aplicación en el navegador. Si el puerto 5000 está
-ocupado: `logo_manager.bat --port 5050`.
+En Windows haz **doble clic en `logo_manager.bat`**: verifica que haya Python 3.9+,
+instala automáticamente lo que falte (Flask, Pillow y requests, más el backend para
+SVG) y abre la aplicación en el navegador. Si el puerto 5000 está ocupado:
+`logo_manager.bat --port 5050`.
+
+En macOS haz **doble clic en `logo_manager.command`**: crea un entorno virtual en
+`.venv` si no existe, instala las dependencias que falten y abre la app. Si al clonar
+el archivo no tiene permiso de ejecución, ejecuta una vez `chmod +x logo_manager.command`.
 
 Opciones de la app: `--port 5050`, `--host 0.0.0.0` y `--no-browser`.
 
@@ -93,6 +99,9 @@ Qué permite hacer:
   archivo). Acepta PNG, JPG, WEBP, GIF y SVG; los SVG se convierten a PNG con
   `cairosvg` o, si no está disponible, con `resvg-py` (el `.bat` lo instala
   automáticamente).
+- **Recorte automático**: al subir o reemplazar una imagen se eliminan los márgenes
+  vacíos (transparentes y blancos) alrededor del logo, sin recortar nada del propio
+  logo, para que quede lo más grande posible dentro del marco.
 - **Reemplazar un logo**: clic en la tarjeta y "Cambiar imagen", o arrastra una
   imagen directamente sobre la tarjeta.
 - **Quitar el logo** de una marca (la marca se mantiene) o **eliminar la marca**

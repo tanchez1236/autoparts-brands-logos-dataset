@@ -3,6 +3,7 @@
   "name": "ACDelco",
   "count": 1,
   "sources": [
+    "manual",
     "wikimedia"
   ]
 }

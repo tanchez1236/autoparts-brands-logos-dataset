@@ -3,6 +3,7 @@
   "name": "Allied Nippon",
   "count": 1,
   "sources": [
+    "manual",
     "wikimedia"
   ]
 }

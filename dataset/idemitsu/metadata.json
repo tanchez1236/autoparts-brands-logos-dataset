@@ -3,6 +3,7 @@
   "name": "Idemitsu",
   "count": 1,
   "sources": [
+    "manual",
     "wikimedia"
   ]
 }

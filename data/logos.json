@@ -1215,6 +1215,15 @@
     }
   },
   {
+    "name": "Bizol",
+    "slug": "bizol",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/bizol.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/bizol.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/bizol.png"
+    }
+  },
+  {
     "name": "Black Diamond",
     "slug": "black-diamond",
     "image": {
@@ -1656,15 +1665,6 @@
     }
   },
   {
-    "name": "Castrol Automotive",
-    "slug": "castrol-automotive",
-    "image": {
-      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/castrol-automotive.png",
-      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/castrol-automotive.png",
-      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/castrol-automotive.png"
-    }
-  },
-  {
     "name": "Castrol filters",
     "slug": "castrol-filters",
     "image": {
@@ -1770,6 +1770,15 @@
       "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/centric.png",
       "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/centric.png",
       "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/centric.png"
+    }
+  },
+  {
+    "name": "Cepsa",
+    "slug": "cepsa",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/cepsa.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/cepsa.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/cepsa.png"
     }
   },
   {
@@ -2400,6 +2409,15 @@
       "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/donaldson.png",
       "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/donaldson.png",
       "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/donaldson.png"
+    }
+  },
+  {
+    "name": "Dongil",
+    "slug": "dongil",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/dongil.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/dongil.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/dongil.png"
     }
   },
   {
@@ -5028,6 +5046,15 @@
       "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/lemforder.png",
       "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/lemforder.png",
       "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/lemforder.png"
+    }
+  },
+  {
+    "name": "Lemko",
+    "slug": "lemko",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/lemko.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/lemko.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/lemko.png"
     }
   },
   {

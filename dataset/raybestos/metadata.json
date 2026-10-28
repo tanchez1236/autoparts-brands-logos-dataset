@@ -3,6 +3,7 @@
   "name": "Raybestos",
   "count": 1,
   "sources": [
+    "manual",
     "wikimedia"
   ]
 }

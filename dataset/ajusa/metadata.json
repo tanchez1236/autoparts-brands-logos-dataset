@@ -3,6 +3,7 @@
   "name": "AJUSA",
   "count": 1,
   "sources": [
-    "autodoc"
+    "autodoc",
+    "manual"
   ]
 }

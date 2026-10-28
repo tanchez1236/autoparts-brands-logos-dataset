@@ -3,6 +3,7 @@
   "name": "Castrol filters",
   "count": 1,
   "sources": [
-    "autodoc"
+    "autodoc",
+    "manual"
   ]
 }

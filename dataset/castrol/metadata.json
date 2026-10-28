@@ -3,6 +3,7 @@
   "name": "Castrol",
   "count": 1,
   "sources": [
-    "eurocarparts"
+    "eurocarparts",
+    "manual"
   ]
 }

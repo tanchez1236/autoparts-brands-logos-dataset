@@ -3,6 +3,7 @@
   "name": "Bardahl",
   "count": 1,
   "sources": [
+    "manual",
     "wikimedia"
   ]
 }

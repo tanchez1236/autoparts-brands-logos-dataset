@@ -3,6 +3,7 @@
   "name": "Milwaukee",
   "count": 1,
   "sources": [
-    "eurocarparts"
+    "eurocarparts",
+    "manual"
   ]
 }

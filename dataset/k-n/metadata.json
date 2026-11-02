@@ -3,6 +3,7 @@
   "name": "K&N",
   "count": 1,
   "sources": [
+    "manual",
     "wikimedia"
   ]
 }

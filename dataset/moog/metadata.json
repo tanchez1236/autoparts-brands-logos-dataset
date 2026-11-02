@@ -5,6 +5,7 @@
   "sources": [
     "autodoc",
     "eurocarparts",
+    "manual",
     "wikimedia"
   ]
 }

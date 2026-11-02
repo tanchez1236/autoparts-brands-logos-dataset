@@ -9,15 +9,6 @@
     }
   },
   {
-    "name": "3K",
-    "slug": "3k",
-    "image": {
-      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/3k.png",
-      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/3k.png",
-      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/3k.png"
-    }
-  },
-  {
     "name": "3M",
     "slug": "3m",
     "image": {

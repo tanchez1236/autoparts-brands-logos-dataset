@@ -3,6 +3,7 @@
   "name": "ACL Race Series",
   "count": 1,
   "sources": [
+    "manual",
     "wikimedia"
   ]
 }

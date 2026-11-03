@@ -3105,6 +3105,15 @@
     }
   },
   {
+    "name": "Febi",
+    "slug": "febi",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/febi.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/febi.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/febi.png"
+    }
+  },
+  {
     "name": "Febi Bilstein",
     "slug": "febi-bilstein",
     "image": {
@@ -5337,12 +5346,12 @@
     }
   },
   {
-    "name": "Mann-Filter",
-    "slug": "mann-filter",
+    "name": "MANN",
+    "slug": "mann",
     "image": {
-      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/mann-filter.png",
-      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/mann-filter.png",
-      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/mann-filter.png"
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/mann.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/mann.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/mann.png"
     }
   },
   {

@@ -1,6 +1,6 @@
 {
   "brand": "car",
-  "name": "CAR",
+  "name": "Car",
   "count": 1,
   "sources": [
     "autodoc"

@@ -52,6 +52,21 @@ def _slug_to_display_name(slug: str) -> str:
     return re.sub(r"[-_]+", " ", slug).title()
 
 
+def _normalize_display_name(value: str) -> str:
+    """Nombre visible: mayúscula al inicio de cada palabra, resto minúsculas."""
+    raw = re.sub(r"\s+", " ", str(value or "")).strip()
+    if not raw:
+        return ""
+    text = raw.lower()
+    text = re.sub(
+        r"(^|[\s\-/.&(\[])([a-záéíóúüñ])",
+        lambda match: match.group(1) + match.group(2).upper(),
+        text,
+    )
+    text = re.sub(r"^(\d+)([a-záéíóúüñ])", lambda match: match.group(1) + match.group(2).upper(), text)
+    return text
+
+
 def _load_name(slug: str, dataset_dir: Path) -> str:
     brand_dir = dataset_dir / slug
     if brand_dir.is_dir():
@@ -63,7 +78,7 @@ def _load_name(slug: str, dataset_dir: Path) -> str:
 
 
 def build_entry(slug: str, dataset_dir: Path, repo_url: str) -> dict:
-    name = _load_name(slug, dataset_dir)
+    name = _normalize_display_name(_load_name(slug, dataset_dir))
     base = repo_url.rstrip("/")
     return {
         "name": name,

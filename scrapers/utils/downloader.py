@@ -21,6 +21,20 @@ def slugify_brand_name(brand: str) -> str:
     return slug or "unknown-brand"
 
 
+def normalize_display_name(value: str) -> str:
+    raw = re.sub(r"\s+", " ", str(value or "")).strip()
+    if not raw:
+        return ""
+    text = raw.lower()
+    text = re.sub(
+        r"(^|[\s\-/.&(\[])([a-záéíóúüñ])",
+        lambda match: match.group(1) + match.group(2).upper(),
+        text,
+    )
+    text = re.sub(r"^(\d+)([a-záéíóúüñ])", lambda match: match.group(1) + match.group(2).upper(), text)
+    return text
+
+
 def ensure_brand_dir(dataset_root: str | Path, brand: str) -> Path:
     brand_dir = Path(dataset_root) / slugify_brand_name(brand)
     brand_dir.mkdir(parents=True, exist_ok=True)
@@ -73,7 +87,7 @@ def write_metadata(brand_dir: Path, brand: str, sources: set[str] | None = None,
     existing = read_metadata(brand_dir, brand)
     sources = sources or set(existing.get("sources", []))
     count = len([path for path in brand_dir.glob("*.png") if path.name != "site.png"]) + (1 if (brand_dir / "site.png").exists() else 0)
-    canonical_name = name or existing.get("name") or brand
+    canonical_name = normalize_display_name(name or existing.get("name") or brand)
     metadata = {
         "brand": slugify_brand_name(brand),
         "name": canonical_name,

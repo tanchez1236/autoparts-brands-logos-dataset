@@ -1,9 +1,9 @@
 Accel
-ACDelco
+Acdelco
 Achilles Tire
-ACL Race Series
+Acl Race Series
 Advics
-AEM
+Aem
 Aeromotive
 Air Lift
 Airtex
@@ -12,14 +12,14 @@ Ajusa
 Akebono
 Allied Nippon
 Amsoil
-ANZO
+Anzo
 Apexi
 Apollo Tyres
-ARB 4x4 Accessories
+Arb 4x4 Accessories
 Arnott
-ARP
+Arp
 Asam
-ATE
+Ate
 Austone
 Autolite
 Autometer
@@ -28,25 +28,25 @@ Baldwin Filters
 Bando
 Bar's Leaks
 Bardahl
-BBS Automotive
-BC Racing
+Bbs Automotive
+Bc Racing
 Beck Arnley
 Behr Hella Service
 Bendix
 Beru
-BFGoodrich
-BG Products
+Bfgoodrich
+Bg Products
 Bilstein
 Bizol
 Blitz
 Blue Print
-BlueDevil Products
-BorgWarner
+Bluedevil Products
+Borgwarner
 Borla
 Borsehung
 Bosal
 Bosch
-bosch
+Bosch
 Bougicord
 Brembo
 Bremi
@@ -54,7 +54,7 @@ Brian Tooley Racing
 Bridgestone
 Cardone
 Carter
-CEAT
+Ceat
 Centric
 Cepsa
 Champion
@@ -70,24 +70,24 @@ Continental Tire
 Cooper Tires
 Corbeau
 Corteco
-CP-Carrillo
+Cp-Carrillo
 Crower
-CSF
+Csf
 Ctek
 Cusco
 Daihatsu
 Dayco
-DeatschWerks
+Deatschwerks
 Deestone
 Defi
 Deka Batteries
 Delinte
 Delphi
 Denso
-DEPO
+Depo
 Depo Racing
-DieHard
-DNJ
+Diehard
+Dnj
 Dobinsons
 Donaldson
 Dongil
@@ -95,7 +95,7 @@ Dorman
 Double Coin
 Dunlop
 Duralast
-EBC Brakes
+Ebc Brakes
 Edelbrock
 Eibach
 Eldor
@@ -105,10 +105,10 @@ Energy Suspension
 Enkei
 Exedy
 Exide
-FAG
+Fag
 Falken
 Febest
-febi
+Febi
 Federal-Mogul
 Fel-Pro
 Ferodo
@@ -117,21 +117,21 @@ Firestone
 Flowmaster
 Fortune Auto
 Foton
-FRAM
+Fram
 Fuchs
 Fuel Off-Road
 Garrett
 Gates
 General Tire
 Giti Tire
-GMB
+Gmb
 Goodridge
 Goodyear
 Great Wall Motors
 Greddy
-GT Radial
+Gt Radial
 Gulf
-GUNK
+Gunk
 H&R
 Haltech
 Hankook
@@ -139,28 +139,28 @@ Hardrace
 Hastings
 Havoline
 Hawk Performance
-HEL Performance
+Hel Performance
 Hella
 Hengst
-Herth+Buss
+Herth+buss
 Hiflofiltro
 Hino
 Hitachi Astemo
-HKS
+Hks
 Holley
 Holset
 Hutchinson
 Idemitsu
-IHI Turbo
-INA
+Ihi Turbo
+Ina
 Injector Dynamics
 Injen
 Interstate Batteries
 Isuzu
-JAC Motors
-JE Pistons
-JK Tyre
-JTEKT
+Jac Motors
+Je Pistons
+Jk Tyre
+Jtekt
 Jurid
 K&N
 Kavo Parts
@@ -174,23 +174,23 @@ Konig
 Koyorad
 Koyorad Racing
 Kumho
-KW Suspensions
-KYB
+Kw Suspensions
+Kyb
 Laufenn
 Lemforder
 Lemko
 Linglong Tire
-Link ECU
+Link Ecu
 Liqui Moly
 Loctite
-Luber-finer
+Luber-Finer
 Lucas Oil
-LuK
-MagnaFlow
+Luk
+Magnaflow
 Magneti Marelli
 Mahle
 Manley Performance
-MANN-FILTER
+Mann-Filter
 Mannol
 Maxxis
 Mazzini
@@ -208,37 +208,37 @@ Mishimoto
 Mitsuboshi
 Mobil
 Monroe
-MOOG
+Moog
 Mopar
-MoTeC
+Motec
 Motor Medic
 Motorcraft
 Motul
-MRF
-MSD
+Mrf
+Msd
 Nachi
 Napa Gold
 National
 Nexen
-NGK
+Ngk
 Nippon America
 Nissens
 Nisshinbo
 Nissin
 Niterra
 Nitto
-NOCO
-NRF
-NSK
-NTN
+Noco
+Nrf
+Nsk
+Ntn
 Odyssey Battery
 Old Man Emu
-OMP
-OMP Racing
+Omp
+Omp Racing
 Optima
-OSRAM Automotive
+Osram Automotive
 Otani
-OZ Racing
+Oz Racing
 Pagid
 Paragon
 Paraut
@@ -247,11 +247,11 @@ Peak
 Pennzoil
 Penrite
 Permatex
-PerTronix
+Pertronix
 Petlas
 Petronas Syntium
 Philips Automotive
-PIAA
+Piaa
 Pierburg
 Pirelli
 Power Stop
@@ -271,7 +271,7 @@ Rein
 Remsa
 Remy
 Repsol
-RideTech
+Ridetech
 Roadstone
 Rotinger
 Rough Country
@@ -289,30 +289,30 @@ Seibon
 Seiken
 Shell
 Showa
-SKF
+Skf
 Skunk2
 Smittybilt
-SNR
+Snr
 Sonax
 Sparco
 Spectra Premium
 Spectre Performance
 Spyder Auto
-SsangYong
+Ssangyong
 Stack
 Standard Motor Products
 Stanley Electric
-StopTech
-STP
-SuperPro
+Stoptech
+Stp
+Superpro
 Supertech
-SWAG
+Swag
 Tanabe
 Tein
 Tenneco
 Textar
 Timken
-TMD Friction
+Tmd Friction
 Tokico
 Top 1
 Total Energies
@@ -320,27 +320,27 @@ Toyo Tires
 Triangle Tire
 Trico
 Trojan Battery
-TRW
+Trw
 Turbosmart
 Turtle Wax
 Twin Air
-TYC
-UFI Filters
+Tyc
+Ufi Filters
 Uniroyal
-URO Parts
+Uro Parts
 Vaico
 Valeo
 Valvoline
 Varta
-VDO
+Vdo
 Victor Reinz
 Vredestein
 Wagner
-wagner
+Wagner
 Walbro
 Walker
 Warn Industries
-WD-40
+Wd-40
 Weber
 Westlake Tires
 Whiteline
@@ -351,5 +351,5 @@ Wynns
 Yokohama
 Yuasa
 Zerex
-ZF Aftermarket
+Zf Aftermarket
 Zimmermann

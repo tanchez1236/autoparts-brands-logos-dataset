@@ -211,6 +211,7 @@ Monroe
 MOOG
 Mopar
 MoTeC
+Motor Medic
 Motorcraft
 Motul
 MRF
@@ -220,6 +221,7 @@ Napa Gold
 National
 Nexen
 NGK
+Nippon America
 Nissens
 Nisshinbo
 Nissin
@@ -291,6 +293,7 @@ SKF
 Skunk2
 Smittybilt
 SNR
+Sonax
 Sparco
 Spectra Premium
 Spectre Performance
@@ -343,7 +346,7 @@ Westlake Tires
 Whiteline
 Wilwood
 Wiseco
-WIX Filters
+Wix
 Wynns
 Yokohama
 Yuasa

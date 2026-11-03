@@ -5859,6 +5859,15 @@
     }
   },
   {
+    "name": "Motor Medic",
+    "slug": "motor-medic",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/motor-medic.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/motor-medic.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/motor-medic.png"
+    }
+  },
+  {
     "name": "MOTORAD",
     "slug": "motorad",
     "image": {
@@ -6162,6 +6171,15 @@
       "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/nipparts.png",
       "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/nipparts.png",
       "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/nipparts.png"
+    }
+  },
+  {
+    "name": "Nippon America",
+    "slug": "nippon-america",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/nippon-america.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/nippon-america.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/nippon-america.png"
     }
   },
   {
@@ -8208,6 +8226,15 @@
     }
   },
   {
+    "name": "Sonax",
+    "slug": "sonax",
+    "image": {
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/sonax.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/sonax.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/sonax.png"
+    }
+  },
+  {
     "name": "SPAHN GLÜHLAMPEN",
     "slug": "spahn-gl-hlampen",
     "image": {
@@ -9639,12 +9666,12 @@
     }
   },
   {
-    "name": "WIX FILTERS",
-    "slug": "wix-filters",
+    "name": "Wix",
+    "slug": "wix",
     "image": {
-      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/wix-filters.png",
-      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/wix-filters.png",
-      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/wix-filters.png"
+      "thumb": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/thumb/wix.png",
+      "optimized": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/optimized/wix.png",
+      "original": "https://raw.githubusercontent.com/tanchez1236/autoparts-brands-logos-dataset/master/logos/original/wix.png"
     }
   },
   {
